@@ -132,8 +132,5 @@
     }
   }
 
-  .blur-3xl {
-    filter: blur(60px);
-    animation: pulse 8s infinite;
-  }
+
 </style>

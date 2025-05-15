@@ -109,24 +109,4 @@
     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: translateY(30px);
   }
-
-  /* Quote text animation */
-  #quote-text span {
-    transform: translateY(0);
-    will-change: opacity;
-  }
-
-  /* Add text lift effect */
-  .word-span {
-    display: inline-block;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
-    position: relative;
-    transition: all 0.3s ease;
-  }
-
-  /* Subtle lift on hover */
-  #quote-text:hover .word-span {
-    transform: translateY(-1px);
-    text-shadow: 0 4px 8px rgba(0,0,0,0.6);
-  }
 </style>

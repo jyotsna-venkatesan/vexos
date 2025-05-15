@@ -16,4 +16,4 @@ Every great business deserves the perfect location. We help you transform confus
 
 ---
 
-© 2023 Vexos
+© 2025 Vexos

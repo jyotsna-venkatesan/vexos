@@ -23,7 +23,7 @@
   </div>
 
   <!-- Mobile Menu Button (Hidden on desktop) -->
-  <button class="md:hidden text-[#2B2B2B]" on:click={toggleMobileMenu}>
+  <button class="md:hidden text-[#2B2B2B]" on:click={toggleMobileMenu} aria-label="Toggle mobile menu">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
     </svg>
