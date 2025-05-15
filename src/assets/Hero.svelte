@@ -1,4 +1,4 @@
-<div class="relative overflow-hidden">
+<div class="relative overflow-hidden font-khula bg-[#DCD9D5]">
   <!-- Hero Section with Background Image -->
   <section id="hero" class="relative">
     <!-- Background Image with Opacity -->
@@ -11,18 +11,18 @@
     </div>
     
     <!-- Purple and Blue Glows -->
-    <div class="absolute right-0 top-0 h-3/4 z-0 overflow-hidden">
+    <div class="absolute -right-1/4 top-0 h-screen w-screen z-0 overflow-hidden">
       <img 
         src="/purple glow.png" 
         alt="Purple Glow" 
-        class="w-auto h-full max-w-none opacity-80 translate-x-1/3"
+        class="w-auto h-full max-w-none opacity-80 scale-150"
       />
     </div>
-    <div class="absolute right-0 bottom-0 h-2/3 z-0 overflow-hidden translate-y-1/4">
+    <div class="absolute -right-1/4 bottom-0 h-screen w-screen z-0 overflow-hidden translate-y-1/4">
       <img 
         src="/blue glow.png" 
         alt="Blue Glow" 
-        class="w-auto h-full max-w-none opacity-80 translate-x-1/3"
+        class="w-auto h-full max-w-none opacity-80 scale-150"
       />
     </div>
     
@@ -51,13 +51,13 @@
   </section>
   
   <!-- What We Do Section -->
-  <section id="what-we-do" class="bg-white py-16 md:py-24">
+  <section id="what-we-do" class="bg-[#DCD9D5] py-16 md:py-24">
     <div class="container mx-auto px-6 md:px-12">
       <h2 class="text-3xl md:text-4xl font-semibold text-[#2B2B2B] mb-8">What We Do</h2>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Feature 1 -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
           <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Location Analytics</h3>
           <p class="text-gray-700">
             We provide data-driven insights to help businesses make informed decisions about their location strategy.
@@ -65,7 +65,7 @@
         </div>
         
         <!-- Feature 2 -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
           <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Market Research</h3>
           <p class="text-gray-700">
             Comprehensive market analysis to identify opportunities and minimize risks in your expansion plans.
@@ -73,7 +73,7 @@
         </div>
         
         <!-- Feature 3 -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
           <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Strategic Guidance</h3>
           <p class="text-gray-700">
             Expert consultation to optimize your physical presence and maximize your business potential.

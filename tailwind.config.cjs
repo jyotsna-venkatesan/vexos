@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         sans: ['"Pathway Extreme"', "sans-serif"],
         alconica: ["Alconica", "sans-serif"],
+        khula: ["Khula", "sans-serif"],
       },
       colors: {
         dark: "#02050D",

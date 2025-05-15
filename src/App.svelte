@@ -4,7 +4,7 @@
   import Hero from "./assets/Hero.svelte";
 </script>
 
-<main>
+<main class="font-khula bg-[#DCD9D5] min-h-screen">
     <Navbar />
     <Hero />
 </main>
