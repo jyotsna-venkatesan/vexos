@@ -1,41 +1,33 @@
-<nav class="sticky top-0 bg-dark px-6 py-3 shadow-md flex justify-between items-center">
+<nav class="sticky top-0 bg-[#DCD9D5] px-6 py-3 shadow-md flex justify-between items-center">
     <!--logo -->
-  <div class="text-xl font-alconica text-white p-2">vexos</div>
+  <div class="text-xl font-alconica text-[#2B2B2B] p-2">vexos</div>
   
   <!-- Navigation Links -->
   <div class="hidden md:flex space-x-6 text-sm">
-    <a href="#what-we-do" class="text-light relative group py-2">
+    <a href="#what-we-do" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
       What We Do
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#why-vexos" class="text-light relative group py-2">
+    <a href="#why-vexos" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
       Why Vexos
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#who-its-for" class="text-light relative group py-2">
+    <a href="#who-its-for" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
       Who It's For
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#the-team" class="text-light relative group py-2">
+    <a href="#the-team" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
       The Team
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#contact" class="text-light relative group py-2">
+    <a href="#contact" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
       Contact
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-    </a>
-  </div>
-  
-  <!-- Login/Signup Button -->
-  <div class="text-sm">
-    <a href="#login" class="text-light relative group py-2">
-      log in/sign up
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
   </div>
 
   <!-- Mobile Menu Button (Hidden on desktop) -->
-  <button class="md:hidden text-white" on:click={toggleMobileMenu}>
+  <button class="md:hidden text-[#2B2B2B]" on:click={toggleMobileMenu}>
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
     </svg>
@@ -43,13 +35,13 @@
 </nav>
 
 <!-- Mobile Menu (Hidden by default) -->
-<div class="bg-dark text-white p-4 md:hidden {isMobileMenuOpen ? 'block' : 'hidden'}">
+<div class="bg-[#DCD9D5] text-[#2B2B2B] p-4 md:hidden {isMobileMenuOpen ? 'block' : 'hidden'}">
   <div class="flex flex-col space-y-3">
-    <a href="#what-we-do" class="py-2" on:click={closeMobileMenu}>What We Do</a>
-    <a href="#why-vexos" class="py-2" on:click={closeMobileMenu}>Why Vexos</a>
-    <a href="#who-its-for" class="py-2" on:click={closeMobileMenu}>Who It's For</a>
-    <a href="#the-team" class="py-2" on:click={closeMobileMenu}>The Team</a>
-    <a href="#contact" class="py-2" on:click={closeMobileMenu}>Contact</a>
+    <a href="#what-we-do" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>What We Do</a>
+    <a href="#why-vexos" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Why Vexos</a>
+    <a href="#who-its-for" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Who It's For</a>
+    <a href="#the-team" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>The Team</a>
+    <a href="#contact" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Contact</a>
   </div>
 </div>
 
