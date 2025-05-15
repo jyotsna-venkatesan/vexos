@@ -31,7 +31,7 @@
             <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-xl hover:-translate-y-1 relative h-full flex flex-col">
               <!-- Team Member Image -->
               <div class="h-72 overflow-hidden">
-                <img src="/team1.jpg" alt="Jyotsna Venkatesan" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" />
+                <img src="./team1.jpg" alt="Jyotsna Venkatesan" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" />
               </div>
 
               <!-- Content -->
@@ -59,7 +59,7 @@
             <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-xl hover:-translate-y-1 relative h-full flex flex-col">
               <!-- Team Member Image -->
               <div class="h-72 overflow-hidden">
-                <img src="/team2.jpg" alt="Mirha Saleem" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" />
+                <img src="./team2.jpg" alt="Mirha Saleem" class="w-full h-full object-cover transition-transform duration-700 transform hover:scale-105" />
               </div>
 
               <!-- Content -->

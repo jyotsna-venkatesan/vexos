@@ -25,7 +25,7 @@
           <div class="feature-card opacity-0" id="feature-1">
             <div class="bg-black rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-xl hover:-translate-y-1 h-64 relative">
               <!-- Background Image -->
-              <img src="/bg3.png" alt="AI Understanding" class="w-full h-full object-cover absolute inset-0" />
+              <img src="./bg3.png" alt="AI Understanding" class="w-full h-full object-cover absolute inset-0" />
 
               <!-- Content Overlay -->
               <div class="absolute bottom-0 left-0 right-0 p-4 bg-black/40 rounded-b-md">
@@ -41,7 +41,7 @@
           <div class="feature-card opacity-0" id="feature-2">
             <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-xl hover:-translate-y-1 h-64 relative">
               <!-- Background Image -->
-              <img src="/bg2.png" alt="Comprehensive Data" class="w-full h-full object-cover absolute inset-0" />
+              <img src="./bg2.png" alt="Comprehensive Data" class="w-full h-full object-cover absolute inset-0" />
 
               <!-- Content Overlay -->
               <div class="absolute bottom-0 left-0 right-0 p-4 bg-black/40 rounded-b-md">
@@ -57,7 +57,7 @@
           <div class="feature-card opacity-0" id="feature-3">
             <div class="bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-500 hover:shadow-xl hover:-translate-y-1 h-64 relative">
               <!-- Background Image -->
-              <img src="/bg1.png" alt="Custom Scoring" class="w-full h-full object-cover absolute inset-0" />
+              <img src="./bg1.png" alt="Custom Scoring" class="w-full h-full object-cover absolute inset-0" />
 
               <!-- Content Overlay -->
               <div class="absolute bottom-0 left-0 right-0 p-4 bg-black/40 rounded-b-md">

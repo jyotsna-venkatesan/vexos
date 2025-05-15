@@ -5,7 +5,7 @@
     <!-- Background Image with Opacity -->
     <div class="absolute inset-0 z-0">
       <img
-        src="/bg image.png"
+        src="./bg image.png"
         alt="Background"
         class="w-full h-full object-cover opacity-50"
       />
@@ -14,7 +14,7 @@
     <!-- Hero Background Image on the right -->
     <div class="absolute right-0 top-0 h-screen w-1/2 z-0 overflow-hidden">
       <img
-        src="/herobg.png"
+        src="./herobg.png"
         alt="Hero Background"
         class="h-full w-screen object-cover object-left"
       />

@@ -1,7 +1,7 @@
 <div class="quote-section w-full py-24 relative z-20 mt-[-2rem]">
   <!-- Background Image with Overlay -->
   <div class="absolute inset-0 z-0 ">
-    <img src="/quotebg.jpg" alt="Background" class="w-full h-full object-cover" />
+    <img src="./quotebg.jpg" alt="Background" class="w-full h-full object-cover" />
     <div class="absolute inset-0 bg-black/50"></div>
     <!-- Gradient fade to #1b1b1b at bottom -->
     <div class="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-b from-transparent to-[#1b1b1b]"></div>
