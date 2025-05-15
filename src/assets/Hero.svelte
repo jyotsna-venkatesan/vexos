@@ -7,29 +7,17 @@
       <img
         src="/bg image.png"
         alt="Background"
-        class="w-full h-full object-cover opacity-30"
+        class="w-full h-full object-cover opacity-50"
       />
     </div>
 
-    <!-- Animated Glows positioned at the right of the screen -->
-    <div class="absolute translate-x-full animate-slide-in-right-1 -right-1/2 md:right-0 top-0 w-full md:w-1/3 h-screen z-0 overflow-visible">
-      <div class="relative w-full h-full">
-        <img
-          src="/purple glow.png"
-          alt="Purple Glow"
-          class="absolute right-0 top-0 h-[85vh] w-auto max-w-none object-contain opacity-80"
-        />
-      </div>
-    </div>
-
-    <div class="absolute translate-x-full animate-slide-in-right-2 -right-1/2 md:right-0 top-[55vh] w-full md:w-1/3 h-screen z-0 overflow-visible">
-      <div class="relative w-full h-full">
-        <img
-          src="/blue glow.png"
-          alt="Blue Glow"
-          class="absolute right-0 top-0 h-[90vh] w-auto max-w-none object-contain opacity-80"
-        />
-      </div>
+    <!-- Hero Background Image on the right -->
+    <div class="absolute right-0 top-0 h-screen w-1/2 z-0 overflow-hidden">
+      <img
+        src="/herobg.png"
+        alt="Hero Background"
+        class="h-full w-screen object-cover object-left"
+      />
     </div>
 
     <!-- Hero Content with Bounce Animation -->
@@ -57,7 +45,7 @@
   </section>
 
   <!-- What We Do Section -->
-  <section id="what-we-do" class="bg-[#DCD9D5] py-16 md:py-24">
+  <section id="what-we-do" class="bg-[#DCD9D5] py-16 md:py-16">
     <div class="container mx-auto px-6 md:px-12">
       <div class="flex flex-col md:flex-row md:items-start md:space-x-12 lg:space-x-20">
         <!-- Left side - Heading -->
@@ -67,14 +55,14 @@
 
         <!-- Right side - Description and Process Animation -->
         <div class="md:w-2/3">
-          <p class="text-lg text-[#2B2B2B] mb-12 max-w-xl">
+          <p class="text-lg text-[#2B2B2B] max-w-xl">
             Vexos uses AI and geospatial data to help businesses find the best location to grow.
             Whether you're opening a clinic or scaling a franchise, we transform complex decisions
             into simple, data-backed insights.
           </p>
 
           <!-- Process Flow Animation - Elements initially hidden -->
-          <div class="process-flow my-16" id="process-container">
+          <div class="process-flow my-4" id="process-container">
             <div class="flex flex-col md:flex-row items-center justify-between relative">
               <!-- Process Step 1 -->
               <div class="process-box border-l-4 border-[#2B2B2B] opacity-0" id="box-1">
@@ -116,6 +104,8 @@
 </div>
 
 <script>
+
+
   // Wait for document to be fully loaded
   document.addEventListener('DOMContentLoaded', function() {
     // Set up intersection observer
@@ -190,7 +180,6 @@
     }
   }
 
-  /* Animation keyframes */
   @keyframes bounceIn {
     0% {
       opacity: 0;
@@ -206,15 +195,6 @@
     }
   }
 
-  @keyframes slideInRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   /* Animation classes */
   .animate-bounce-in-1 {
     animation: bounceIn 0.8s ease-out 0.2s forwards;
@@ -226,13 +206,5 @@
 
   .animate-bounce-in-3 {
     animation: bounceIn 0.8s ease-out 0.8s forwards;
-  }
-
-  .animate-slide-in-right-1 {
-    animation: slideInRight 1.2s ease-out 0.3s forwards;
-  }
-
-  .animate-slide-in-right-2 {
-    animation: slideInRight 1.2s ease-out 0.6s forwards;
   }
 </style>

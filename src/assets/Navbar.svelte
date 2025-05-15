@@ -12,15 +12,11 @@
       Why Vexos
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#who-its-for" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
-      Who It's For
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
-    </a>
-    <a href="#the-team" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
+    <a href="#team-section" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
       The Team
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#contact" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
+    <a href="#footer-section" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
       Contact
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
     </a>
@@ -39,9 +35,8 @@
   <div class="flex flex-col space-y-3">
     <a href="#what-we-do" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>What We Do</a>
     <a href="#why-vexos" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Why Vexos</a>
-    <a href="#who-its-for" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Who It's For</a>
-    <a href="#the-team" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>The Team</a>
-    <a href="#contact" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Contact</a>
+    <a href="#team-section" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>The Team</a>
+    <a href="#footer-section" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Contact</a>
   </div>
 </div>
 

@@ -1,4 +1,4 @@
-<div class="bg-gradient-to-b from-[#DCD9D5] to-[#1b1b1b] py-24 md:py-32 relative overflow-hidden" id="why-vexos">
+<div class="bg-[#DCD9D5] pt-8 md:pt-12 relative overflow-hidden" id="why-vexos">
   <div class="container mx-auto px-6 md:px-12 relative z-10">
     <div class="flex flex-col md:flex-row mb-16">
       <div class="w-full md:w-1/3 mb-6 md:mb-0">
@@ -71,27 +71,14 @@
         </div>
       </div>
     </div>
-
-    <!-- Quote Section -->
-    <div class="mt-24 mb-0 opacity-0 relative" id="quote-section">
-      <div class="bg-[#DCD9D5] backdrop-blur-sm rounded-xl p-12 shadow-lg text-center">
-        <svg class="w-12 h-12 text-[#2b2b2b] mx-auto mb-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-        </svg>
-        <p class="text-2xl md:text-3xl font-light text-[#2b2b2b] mb-8 mx-auto max-w-3xl">
-          "I just used Google Maps and my gut feeling to pick the spot."
-        </p>
-        <p class="text-md text-[#2b2b2b] font-medium tracking-wider uppercase">
-          — Business Owner Looking For An Office
-        </p>
-      </div>
-    </div>
   </div>
 </div>
 
+
 <script lang="ts">
-  // Wait for document to be fully loaded
-  document.addEventListener('DOMContentLoaded', function() {
+  import { onMount } from 'svelte';
+
+  onMount(() => {
     // Set up intersection observer for feature cards
     const featureObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -125,35 +112,12 @@
     if (problemStatement) {
       problemObserver.observe(problemStatement);
     }
-
-    // Set up observer for quote section
-    const quoteObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && entry.target instanceof HTMLElement) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-          quoteObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-
-    // Observe the quote section
-    const quoteSection = document.getElementById('quote-section');
-    if (quoteSection) {
-      quoteObserver.observe(quoteSection);
-    }
   });
 </script>
 
 <style>
   /* Feature card styling */
   .feature-card {
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transform: translateY(30px);
-  }
-
-  /* Problem statement and quote-section styling */
-  #quote-section {
     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: translateY(30px);
   }
