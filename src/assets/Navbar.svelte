@@ -1,6 +1,6 @@
 <nav class="sticky top-0 bg-dark px-6 py-3 shadow-md flex justify-between items-center">
     <!--logo -->
-  <div class="text-xl font-alconica text-white p-2">yuvoa</div>
+  <div class="text-xl font-alconica text-white p-2">vexos</div>
   <div class="space-x-4 text-sm">
     <a href="#login" class="text-light relative group py-2">
       log in/sign up
