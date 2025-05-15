@@ -5,6 +5,7 @@
   import Why from "./assets/Why.svelte";
   import Team from "./assets/Team.svelte";
   import Quote from "./assets/Quote.svelte";
+  import Contact from "./assets/Contact.svelte";
   import Footer from "./assets/Footer.svelte";
 </script>
 
@@ -13,5 +14,6 @@
     <Hero />
     <Why />
     <Team />
+    <Contact />
     <Footer />
 </main>

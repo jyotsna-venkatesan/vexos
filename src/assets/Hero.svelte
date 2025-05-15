@@ -20,6 +20,13 @@
       />
     </div>
 
+    <!-- Curved overlay for bottom of hero - simple downward curve like the top of a circle -->
+    <div class="absolute bottom-0 left-0 right-0 h-32 z-[1]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none" class="absolute bottom-0 left-0 w-full h-full">
+        <path fill="#1B1B1B" d="M0,100 L1440,100 L1440,0 C1080,60 360,60 0,0 L0,100 Z"></path>
+      </svg>
+    </div>
+
     <!-- Hero Content with Bounce Animation -->
     <div class="relative container mx-auto px-6 md:px-12 z-10 w-full">
       <div class="max-w-5xl">
@@ -44,8 +51,21 @@
     </div>
   </section>
 
+  <!-- Vision Section -->
+  <section id="vision" class="bg-[#1B1B1B] py-8 md:py-12 text-white relative">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6">Our Vision</h2>
+        <p class="text-lg leading-relaxed mb-8">
+          We believe every business — no matter the size — should have access to intelligent, data-backed location decisions.
+          Vexos exists to democratize geospatial intelligence and help build smarter, more sustainable cities.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- What We Do Section -->
-  <section id="what-we-do" class="bg-[#DCD9D5] py-16 md:py-16">
+  <section id="what-we-do" class="bg-[#DCD9D5] py-10 md:py-12">
     <div class="container mx-auto px-6 md:px-12">
       <div class="flex flex-col md:flex-row md:items-start md:space-x-12 lg:space-x-20">
         <!-- Left side - Heading -->
