@@ -1,99 +1,242 @@
+<!-- Hero Component with Animations -->
 <div class="relative overflow-hidden font-khula bg-[#DCD9D5]">
   <!-- Hero Section with Background Image -->
-  <section id="hero" class="relative">
+  <section id="hero" class="relative min-h-screen overflow-visible flex items-center">
     <!-- Background Image with Opacity -->
     <div class="absolute inset-0 z-0">
-      <img 
-        src="/bg image.png" 
-        alt="Background" 
-        class="w-full h-full object-cover opacity-15"
+      <img
+        src="/bg image.png"
+        alt="Background"
+        class="w-full h-full object-cover opacity-30"
       />
     </div>
-    
-    <!-- Purple and Blue Glows -->
-    <div class="absolute -right-1/4 top-0 h-screen w-screen z-0 overflow-hidden">
-      <img 
-        src="/purple glow.png" 
-        alt="Purple Glow" 
-        class="w-auto h-full max-w-none opacity-80 scale-150"
-      />
+
+    <!-- Animated Glows positioned at the right of the screen -->
+    <div class="absolute translate-x-full animate-slide-in-right-1 -right-1/2 md:right-0 top-0 w-full md:w-1/3 h-screen z-0 overflow-visible">
+      <div class="relative w-full h-full">
+        <img
+          src="/purple glow.png"
+          alt="Purple Glow"
+          class="absolute right-0 top-0 h-[85vh] w-auto max-w-none object-contain opacity-80"
+        />
+      </div>
     </div>
-    <div class="absolute -right-1/4 bottom-0 h-screen w-screen z-0 overflow-hidden translate-y-1/4">
-      <img 
-        src="/blue glow.png" 
-        alt="Blue Glow" 
-        class="w-auto h-full max-w-none opacity-80 scale-150"
-      />
+
+    <div class="absolute translate-x-full animate-slide-in-right-2 -right-1/2 md:right-0 top-[55vh] w-full md:w-1/3 h-screen z-0 overflow-visible">
+      <div class="relative w-full h-full">
+        <img
+          src="/blue glow.png"
+          alt="Blue Glow"
+          class="absolute right-0 top-0 h-[90vh] w-auto max-w-none object-contain opacity-80"
+        />
+      </div>
     </div>
-    
-    <!-- Hero Content -->
-    <div class="relative container mx-auto px-6 md:px-12 py-20 md:py-36 z-10">
-      <div class="max-w-xl">
-        <p class="text-[#2B2B2B] text-lg mb-4">
-          Every great business deserves the perfect location. We help you transform 
-          <span class="blur-[1px] inline-block">confusion</span> 
-          to 
-          <span class="text-black font-medium">precision</span>
+
+    <!-- Hero Content with Bounce Animation -->
+    <div class="relative container mx-auto px-6 md:px-12 z-10 w-full">
+      <div class="max-w-5xl">
+        <p class="text-[#2B2B2B] text-lg mb-4 opacity-0 animate-bounce-in-1">
+          Every great business deserves the perfect location. <br>We help you transform
+          <span class="blur-[1px] inline-block">confusion</span>
+          to
+          <span class="text-black font-bold">precision</span>
         </p>
-        
-        <h1 class="text-[#2B2B2B] text-5xl md:text-8xl font-semibold leading-tight mb-8">
-          Navigate tomorrow, <br/>today.
+
+        <h1 class="text-[#2B2B2B] text-5xl md:text-8xl font-semibold leading-tight mb-8 md:w-[90%] opacity-0 animate-bounce-in-2">
+          Navigate tomorrow, today.
         </h1>
-        
-        <button 
-          disabled 
-          class="bg-[#2B2B2B] text-white py-3 px-8 rounded-md opacity-90 cursor-not-allowed"
+
+        <button
+          disabled
+          class="bg-[#2B2B2B] text-white py-3 px-8 rounded-md opacity-0 animate-bounce-in-3 cursor-not-allowed"
         >
           Coming Soon
         </button>
       </div>
     </div>
   </section>
-  
+
   <!-- What We Do Section -->
   <section id="what-we-do" class="bg-[#DCD9D5] py-16 md:py-24">
     <div class="container mx-auto px-6 md:px-12">
-      <h2 class="text-3xl md:text-4xl font-semibold text-[#2B2B2B] mb-8">What We Do</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Feature 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Location Analytics</h3>
-          <p class="text-gray-700">
-            We provide data-driven insights to help businesses make informed decisions about their location strategy.
-          </p>
+      <div class="flex flex-col md:flex-row md:items-start md:space-x-12 lg:space-x-20">
+        <!-- Left side - Heading -->
+        <div class="md:w-1/3 mb-8 md:mb-0">
+          <h2 class="text-3xl md:text-4xl font-semibold text-[#2B2B2B] sticky top-24">What We Do</h2>
         </div>
         
-        <!-- Feature 2 -->
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Market Research</h3>
-          <p class="text-gray-700">
-            Comprehensive market analysis to identify opportunities and minimize risks in your expansion plans.
+        <!-- Right side - Description and Process Animation -->
+        <div class="md:w-2/3">
+          <p class="text-lg text-[#2B2B2B] mb-12 max-w-xl">
+            Vexos uses AI and geospatial data to help businesses find the best location to grow. 
+            Whether you're opening a clinic or scaling a franchise, we transform complex decisions 
+            into simple, data-backed insights.
           </p>
-        </div>
-        
-        <!-- Feature 3 -->
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Strategic Guidance</h3>
-          <p class="text-gray-700">
-            Expert consultation to optimize your physical presence and maximize your business potential.
-          </p>
+          
+          <!-- Process Flow Animation - Elements initially hidden -->
+          <div class="process-flow my-16" id="process-container">
+            <div class="flex flex-col md:flex-row items-center justify-between relative">
+              <!-- Process Step 1 -->
+              <div class="process-box border-l-4 border-[#2B2B2B] opacity-0" id="box-1">
+                <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Input</h3>
+                <p class="text-gray-700">Your business needs and parameters</p>
+              </div>
+              
+              <!-- Arrow 1 -->
+              <div class="process-arrow hidden md:block w-12 text-center opacity-0" id="arrow-1">
+                <svg class="w-12 h-6 mx-auto text-[#2B2B2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </div>
+              
+              <!-- Process Step 2 -->
+              <div class="process-box opacity-0" id="box-2">
+                <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Analysis</h3>
+                <p class="text-gray-700">AI processing of location data</p>
+              </div>
+              
+              <!-- Arrow 2 -->
+              <div class="process-arrow hidden md:block w-12 text-center opacity-0" id="arrow-2">
+                <svg class="w-12 h-6 mx-auto text-[#2B2B2B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </div>
+              
+              <!-- Process Step 3 -->
+              <div class="process-box opacity-0" id="box-3">
+                <h3 class="text-xl font-medium text-[#2B2B2B] mb-3">Recommendation</h3>
+                <p class="text-gray-700">Actionable location insights</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </div>
 
+<script>
+  // Wait for document to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set up intersection observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // When the process container is in view, trigger the animations
+          animateProcess();
+          // Stop observing once triggered
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 }); // Element must be 30% visible
+    
+    // Start observing the process container
+    const container = document.getElementById('process-container');
+    if (container) {
+      observer.observe(container);
+    }
+    
+    // Function to animate process elements in sequence
+    function animateProcess() {
+      const elements = [
+        document.getElementById('box-1'),
+        document.getElementById('arrow-1'),
+        document.getElementById('box-2'),
+        document.getElementById('arrow-2'),
+        document.getElementById('box-3')
+      ];
+      
+      elements.forEach((element, index) => {
+        if (element) {
+          setTimeout(() => {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+          }, index * 300); // 300ms delay between each element
+        }
+      });
+    }
+  });
+</script>
+
 <style>
-  /* Custom opacity class since TailwindCSS doesn't have opacity-15 by default */
+  /* Custom opacity class */
   .opacity-15 {
     opacity: 0.15;
   }
   
-  /* Custom styles for mobile responsiveness */
-  @media (max-width: 640px) {
-    #hero {
-      min-height: 80vh;
+  /* Process box styling */
+  .process-box {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.6s ease;
+    width: 100%;
+    transform: translateY(20px);
+  }
+  
+  /* Process arrow styling */
+  .process-arrow {
+    transition: all 0.6s ease;
+    transform: translateY(20px);
+  }
+  
+  @media (min-width: 768px) {
+    .process-box {
+      width: 16rem;
+      margin-bottom: 0;
     }
+  }
+  
+  @media (max-width: 767px) {
+    .process-box {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Animation keyframes */
+  @keyframes bounceIn {
+    0% { 
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    60% { 
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+    100% { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation classes */
+  .animate-bounce-in-1 {
+    animation: bounceIn 0.8s ease-out 0.2s forwards;
+  }
+  
+  .animate-bounce-in-2 {
+    animation: bounceIn 0.8s ease-out 0.5s forwards;
+  }
+  
+  .animate-bounce-in-3 {
+    animation: bounceIn 0.8s ease-out 0.8s forwards;
+  }
+  
+  .animate-slide-in-right-1 {
+    animation: slideInRight 1.2s ease-out 0.3s forwards;
+  }
+  
+  .animate-slide-in-right-2 {
+    animation: slideInRight 1.2s ease-out 0.6s forwards;
   }
 </style>
