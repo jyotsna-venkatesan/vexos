@@ -45,6 +45,9 @@
       </div>
     </div>
 
+    <!-- first glow -->
+    <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto -mt-20 hidden sm:block md:block">
+
     <!-- mobile view -->
     <div class="block sm:hidden">
       <!-- mobile image -->
