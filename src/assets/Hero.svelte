@@ -5,11 +5,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pb-12">
           <!-- left half text -->
           <div class="flex flex-col justify-end h-full order-2 md:order-1 ">
-            <p class="text-light text-lg ">A single platform that tells you exactly where to place what matters — whether it's a store, a sensor, or a security team.</p>
+            <p class="text-light text-md ">A single platform that tells you exactly where to place what matters — whether it's a store, a sensor, or a security team.</p>
           </div>
 
           <!-- right half text -->
-          <h1 class="text-light font-medium text-6xl md:text-6xl lg:text-[90px] text-right md:text-right order-1 md:order-2"> RE-IMAGINING LOCATION DECISIONS</h1>
+          <h1 class="text-light font-medium text-6xl md:text-5xl lg:text-[90px] text-right md:text-right order-1 md:order-2"> RE-IMAGINING LOCATION DECISIONS</h1>
       </div>
 
       <!-- horizontal line -->
@@ -21,17 +21,47 @@
 
   <!-- what is vexos image section -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 lg:mt-24 mt-16">
-    <div class="relative">
-      <!-- laptop image -->
-      <img src="/gateway-image.png" alt="Gateway Image" class="w-full h-auto hidden sm:block">
+    <!-- ipad/laptop image -->
+    <div class="relative hidden sm:block">
+      <img src="/gateway-image.png" alt="Gateway Image" class="w-full h-auto">
 
-      <!-- mobile size image -->
-      <img src="/mobile-gateway-image.png" alt="Gateway Image" class="w-full h-auto block sm:hidden">
+      <!-- semi transparent bg for the image overlay text -->
+      <div class="absolute lg:top-52 top-6 left-8 lg:w-1/2 w-3/5 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6">
+        <p class="text-light text-md mb-6">Vexos doesn't just visualize locations — it decides them. We focus on the real question:</p>
 
-      <!-- what is vexos text over the image -->
-      <div class="absolute inset-0 flex items-center">
-        <h1 class="text-light font-medium text-5xl pl-6">What is Vexos?</h1>
+        <!-- Indented text with gradient line -->
+        <div class="flex items-center mt-4 mb-6">
+          <div class="w-1 h-8 bg-gradient-to-b from-orange-500 to-pink-500 rounded-full"></div>
+          <p class="text-light text-md font-medium ml-6">Where should you place the thing that matters most?</p>
+        </div>
+
+        <!-- remaining laptop/ipad text -->
+        <p class="text-light text-md">Vexos uses real-world signals — from satellite imagery and foot traffic to zoning data and infrastructure layers — to recommend precise, optimized locations.</p>
       </div>
+
+      <!-- What is Vexos text moved to bottom left -->
+      <div class="absolute bottom-8 left-8">
+        <h1 class="text-light font-medium text-5xl">What is Vexos?</h1>
+      </div>
+    </div>
+
+    <!-- mobile view -->
+    <div class="block sm:hidden">
+      <!-- mobile image -->
+      <img src="/mobile-gateway-image.png" alt="Gateway Image" class="w-full h-auto">
+
+      <!-- mobile text -->
+      <h1 class="text-light font-medium text-3xl mt-16 mb-6">What is Vexos?</h1>
+      <p class="text-light text-md">Vexos doesn't just visualize locations — it decides them. We focus on the real question:</p>
+
+      <!-- indented text with gradient line -->
+      <div class="flex items-center mt-4 mb-6">
+        <div class="w-1 h-12 bg-gradient-to-b from-orange-500 to-pink-500 rounded-full"></div>
+        <p class="text-light text-md font-medium ml-6">Where should you place the thing that matters most?</p>
+      </div>
+
+      <!-- remaining mobile text -->
+      <p class="text-light text-md">Vexos uses real-world signals — from satellite imagery and foot traffic to zoning data and infrastructure layers — to recommend precise, optimized locations.</p>
     </div>
   </div>
 </div>
