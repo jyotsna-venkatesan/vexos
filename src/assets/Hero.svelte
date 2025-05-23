@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <!-- first glow -->
+    <!-- first glow for laptop-->
     <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto -mt-20 hidden sm:block md:block">
 
     <!-- mobile view -->
@@ -65,6 +65,9 @@
 
       <!-- remaining mobile text -->
       <p class="text-light text-md">Vexos uses real-world signals — from satellite imagery and foot traffic to zoning data and infrastructure layers — to recommend precise, optimized locations.</p>
+
+      <!-- first glow for mobile -->
+      <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto block mt-8">
     </div>
   </div>
 </div>
