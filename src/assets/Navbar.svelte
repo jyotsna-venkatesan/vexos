@@ -1,24 +1,24 @@
-<nav class="sticky top-0 bg-[#DCD9D5] px-6 py-3 shadow-md flex justify-between items-center">
+<nav class="sticky top-0 bg-dark px-6 py-3 shadow-md flex justify-between items-center">
     <!--logo -->
   <div class="text-xl font-alconica text-[#2B2B2B] p-2">vexos</div>
 
   <!-- Navigation Links -->
-  <div class="hidden md:flex space-x-8 text-sm">
-    <a href="#what-we-do" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
-      What We Do
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
+  <div class="hidden md:flex space-x-16 text-sm">
+      <!-- home link -->
+    <a href="/" class="text-light hover:text-pinkl relative group py-2">
+      Home
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#why-vexos" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
-      Why Vexos
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
+    <!-- the product link -->
+    <a href="#what-we-do" class="text-light hover:text-pinkl relative group py-2">
+      The Product
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="#team-section" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
-      The Team
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
-    </a>
-    <a href="#footer-section" class="text-[#2B2B2B] hover:text-[#000000] relative group py-2">
-      Contact
-      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#2B2B2B] transition-all duration-300 group-hover:w-full"></span>
+
+    <!-- about us link -->
+    <a href="#what-we-do" class="text-light hover:text-pinkl relative group py-2">
+      About us
+      <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
   </div>
 

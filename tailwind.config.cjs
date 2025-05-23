@@ -4,12 +4,12 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Pathway Extreme"', "sans-serif"],
-        alconica: ["Alconica", "sans-serif"],
-        khula: ["Khula", "sans-serif"],
       },
       colors: {
-        dark: "#02050D",
-        light: "#E5E5E5",
+        dark: "#040404",
+        light: "#F7F7F7",
+
+        pinkl: "#FFA4C4",
       },
     },
   },
