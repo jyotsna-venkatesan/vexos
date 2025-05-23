@@ -12,8 +12,4 @@
 <main class="font-khula bg-[#DCD9D5] min-h-screen">
     <Navbar />
     <Hero />
-    <Why />
-    <Team />
-    <Contact />
-    <Footer />
 </main>

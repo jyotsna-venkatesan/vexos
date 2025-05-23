@@ -22,21 +22,20 @@
     </a>
   </div>
 
-  <!-- Mobile Menu Button (Hidden on desktop) -->
-  <button class="md:hidden text-[#2B2B2B]" on:click={toggleMobileMenu} aria-label="Toggle mobile menu">
+  <!-- Mobile Menu Button -->
+  <button class="md:hidden text-light" on:click={toggleMobileMenu} aria-label="Toggle mobile menu">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
     </svg>
   </button>
 </nav>
 
-<!-- Mobile Menu (Hidden by default) -->
-<div class="bg-[#DCD9D5] text-[#2B2B2B] p-4 md:hidden {isMobileMenuOpen ? 'block' : 'hidden'}">
+<!-- Mobile Menu  -->
+<div class="bg-dark text-light p-4 md:hidden {isMobileMenuOpen ? 'block' : 'hidden'}">
   <div class="flex flex-col space-y-3">
-    <a href="#what-we-do" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>What We Do</a>
-    <a href="#why-vexos" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Why Vexos</a>
-    <a href="#team-section" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>The Team</a>
-    <a href="#footer-section" class="py-2 hover:text-[#000000]" on:click={closeMobileMenu}>Contact</a>
+    <a href="#what-we-do" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>Home</a>
+    <a href="#why-vexos" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>The Product</a>
+    <a href="#team-section" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>About Us</a>
   </div>
 </div>
 
