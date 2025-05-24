@@ -35,30 +35,25 @@
             }
 
             try {
-                // Send to our Netlify function endpoint
-                const response = await fetch('/.netlify/functions/subscribe', {
+                // Using FormSubmit.co as our form backend - no registration required
+                const response = await fetch('https://formsubmit.co/ajax/venkatesanjyotsna@gmail.com', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Accept': 'application/json'
                     },
                     body: JSON.stringify({
                         email: email,
-                        target: 'venkatesanjyotsna@gmail.com'
+                        subject: "New Vexos Subscription",
+                        message: `New subscription request from: ${email}`,
+                        _autoresponse: "Thank you for subscribing to Vexos updates!"
                     })
                 });
 
-                // Check if the response has content
-                const text = await response.text();
-                let result = {};
+                // Parse the response as JSON (FormSubmit always returns JSON)
+                const result = await response.json();
 
-                try {
-                    // Try to parse the response as JSON
-                    result = JSON.parse(text);
-                } catch (parseError) {
-                    console.warn('Response is not valid JSON:', text);
-                }
-
-                if (response.ok) {
+                if (response.ok && result.success) {
                     // Show success message and reset form
                     submissionMessage = 'Thank you! We\'ll keep you updated.';
                     messageType = 'success';
@@ -79,14 +74,25 @@
 
                 messageType = 'error';
 
-                // As a fallback, try to open the user's email client
+                // Since we're on GitHub Pages without backend functionality,
+                // we'll use the email client option directly
+                submissionMessage = 'Our form service is preparing to open your email client...';
+                messageType = 'success';
+
+                // Create the mailto link
                 const mailtoLink = document.createElement('a');
                 mailtoLink.href = `mailto:venkatesanjyotsna@gmail.com?subject=Vexos%20Email%20Subscription&body=Please%20subscribe%20me%20to%20Vexos%20updates:%20${encodeURIComponent(email)}`;
 
-                // Open the mailto link
+                // Open the mailto link after a brief delay
                 setTimeout(() => {
-                    if (confirm('Would you like to open your email client to manually send your subscription request?')) {
+                    if (confirm('Click OK to open your email client to send your subscription request.')) {
                         mailtoLink.click();
+                        submissionMessage = 'Thank you for your interest! Please send the email that opened in your email client.';
+                        messageType = 'success';
+                        email = '';
+                    } else {
+                        submissionMessage = 'You can try again later or contact us directly at venkatesanjyotsna@gmail.com';
+                        messageType = 'error';
                     }
                 }, 500);
             }
