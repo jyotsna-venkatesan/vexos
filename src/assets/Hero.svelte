@@ -1,12 +1,12 @@
 <script>
   import { onMount } from 'svelte';
 
-  let desktopImageScale = 1.2; // Starting scale value for desktop (zoomed in)
-  let mobileImageScale = 1.2; // Starting scale value for mobile (zoomed in)
+  let desktopImageScale = 1.4;
+  let mobileImageScale = 1.4;
   let isDesktopImageVisible = false;
   let isMobileImageVisible = false;
 
-  // Function to handle the zoom effect on scroll
+  // zoom effect
   const handleScroll = () => {
     const desktopImageEl = document.getElementById('desktop-gateway-image');
     const mobileImageEl = document.getElementById('mobile-gateway-image');
@@ -17,10 +17,8 @@
 
       if (isVisible) {
         isDesktopImageVisible = true;
-        // Calculate how far the image is in the viewport (0 to 1)
         const viewportProgress = Math.max(0, Math.min(1, 1 - (rect.top / window.innerHeight)));
-        // Scale from 1.2 to 1 based on scroll progress
-        desktopImageScale = 1.2 - (0.2 * viewportProgress);
+        desktopImageScale = 1.4 - (0.2 * viewportProgress);
       }
     }
 
@@ -30,21 +28,15 @@
 
       if (isVisible) {
         isMobileImageVisible = true;
-        // Calculate how far the image is in the viewport (0 to 1)
         const viewportProgress = Math.max(0, Math.min(1, 1 - (rect.top / window.innerHeight)));
-        // Scale from 1.2 to 1 based on scroll progress
-        mobileImageScale = 1.2 - (0.2 * viewportProgress);
+        mobileImageScale = 1.4 - (0.2 * viewportProgress);
       }
     }
   };
 
   onMount(() => {
-    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
-    // Initial check
     handleScroll();
-
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -52,7 +44,7 @@
 </script>
 
 <!-- combined hero and what is vexos section -->
-<div class="relative overflow-hidden bg-dark pb-64">
+<div class="relative overflow-hidden bg-dark ">
   <div class="max-w-7xl mx-auto lg:pt-48 md:pt-48 pt-24 px-4 sm:px-6 lg:px-8">
       <!-- grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pb-12">
@@ -73,7 +65,7 @@
   <img class="absolute right-0 md:-mt-52 lg:-mt-96 -mt-28 z-10" src="/flame-1.png">
 
   <!-- what is vexos image section -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 lg:mt-24 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 mt-24">
     <!-- ipad/laptop image -->
     <div class="relative hidden sm:block">
       <!-- Image wrapper with overflow hidden to contain the scaled image -->
@@ -124,7 +116,7 @@
       </div>
 
       <!-- mobile text -->
-      <h1 class="text-light font-medium text-3xl mt-16 mb-6">What is Vexos?</h1>
+      <h1 class="text-light font-medium text-3xl mt-16 mb-12">What is Vexos?</h1>
       <p class="text-light text-md">Vexos doesn't just visualize locations — it decides them. We focus on the real question:</p>
 
       <!-- indented text with gradient line -->

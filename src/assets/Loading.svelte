@@ -5,9 +5,7 @@
     // default message
     export let message = 'Loading...';
     export let waitForText = true;
-    // Set visibility delay after typing (in milliseconds)
     export let visibilityDelay = 2000;
-    // Duration of exit animation in milliseconds
     export let exitAnimationDuration = 600;
 
     const dispatch = createEventDispatcher();
@@ -17,19 +15,18 @@
     let visible = true;
 
     onMount(() => {
-        // Start revealing characters one by one
+        // start revealing characters
         revealTimer = setInterval(() => {
             if (visibleChars < message.length) {
                 visibleChars++;
             } else {
                 clearInterval(revealTimer);
 
-                // Add a delay before starting exit animation
+                // delay
                 delayTimer = setTimeout(() => {
-                    // Start the exit animation
+                    // start the exit animation
                     visible = false;
 
-                    // Dispatch event after animation completes
                     setTimeout(() => {
                         dispatch('textLoaded');
                     }, exitAnimationDuration);
