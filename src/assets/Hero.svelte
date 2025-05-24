@@ -69,12 +69,12 @@
     <!-- ipad/laptop image -->
     <div class="relative hidden sm:block">
       <!-- Image wrapper with overflow hidden to contain the scaled image -->
-      <div class="overflow-hidden">
+      <div class="overflow-hidden rounded-md">
         <img
           id="desktop-gateway-image"
           src="/gateway-image.png"
           alt="Gateway Image"
-          class="w-full h-auto transition-transform duration-300 ease-out"
+          class="w-full h-auto transition-transform duration-300 ease-out rounded-md"
           style="transform: scale({desktopImageScale}); transform-origin: center center;"
         >
       </div>
@@ -105,12 +105,12 @@
     <!-- mobile view -->
     <div class="block sm:hidden">
       <!-- Mobile image wrapper with overflow hidden -->
-      <div class="overflow-hidden">
+      <div class="overflow-hidden rounded-md">
         <img
           id="mobile-gateway-image"
           src="/mobile-gateway-image.png"
           alt="Gateway Image"
-          class="w-full h-auto transition-transform duration-300 ease-out"
+          class="w-full h-auto transition-transform duration-300 ease-out rounded-md"
           style="transform: scale({mobileImageScale}); transform-origin: center center;"
         >
       </div>
