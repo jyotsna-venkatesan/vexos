@@ -1,3 +1,56 @@
+<script>
+  import { onMount } from 'svelte';
+
+  let desktopImageScale = 1.2; // Starting scale value for desktop (zoomed in)
+  let mobileImageScale = 1.2; // Starting scale value for mobile (zoomed in)
+  let isDesktopImageVisible = false;
+  let isMobileImageVisible = false;
+
+  // Function to handle the zoom effect on scroll
+  const handleScroll = () => {
+    const desktopImageEl = document.getElementById('desktop-gateway-image');
+    const mobileImageEl = document.getElementById('mobile-gateway-image');
+
+    if (desktopImageEl) {
+      const rect = desktopImageEl.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isVisible) {
+        isDesktopImageVisible = true;
+        // Calculate how far the image is in the viewport (0 to 1)
+        const viewportProgress = Math.max(0, Math.min(1, 1 - (rect.top / window.innerHeight)));
+        // Scale from 1.2 to 1 based on scroll progress
+        desktopImageScale = 1.2 - (0.2 * viewportProgress);
+      }
+    }
+
+    if (mobileImageEl) {
+      const rect = mobileImageEl.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isVisible) {
+        isMobileImageVisible = true;
+        // Calculate how far the image is in the viewport (0 to 1)
+        const viewportProgress = Math.max(0, Math.min(1, 1 - (rect.top / window.innerHeight)));
+        // Scale from 1.2 to 1 based on scroll progress
+        mobileImageScale = 1.2 - (0.2 * viewportProgress);
+      }
+    }
+  };
+
+  onMount(() => {
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+</script>
+
 <!-- combined hero and what is vexos section -->
 <div class="relative overflow-hidden bg-dark pb-64">
   <div class="max-w-7xl mx-auto lg:pt-48 md:pt-48 pt-24 px-4 sm:px-6 lg:px-8">
@@ -23,7 +76,16 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 lg:mt-24 mt-16">
     <!-- ipad/laptop image -->
     <div class="relative hidden sm:block">
-      <img src="/gateway-image.png" alt="Gateway Image" class="w-full h-auto">
+      <!-- Image wrapper with overflow hidden to contain the scaled image -->
+      <div class="overflow-hidden">
+        <img
+          id="desktop-gateway-image"
+          src="/gateway-image.png"
+          alt="Gateway Image"
+          class="w-full h-auto transition-transform duration-300 ease-out"
+          style="transform: scale({desktopImageScale}); transform-origin: center center;"
+        >
+      </div>
 
       <!-- semi transparent bg for the image overlay text -->
       <div class="absolute lg:top-52 top-6 left-8 lg:w-1/2 w-3/5 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6">
@@ -50,8 +112,16 @@
 
     <!-- mobile view -->
     <div class="block sm:hidden">
-      <!-- mobile image -->
-      <img src="/mobile-gateway-image.png" alt="Gateway Image" class="w-full h-auto">
+      <!-- Mobile image wrapper with overflow hidden -->
+      <div class="overflow-hidden">
+        <img
+          id="mobile-gateway-image"
+          src="/mobile-gateway-image.png"
+          alt="Gateway Image"
+          class="w-full h-auto transition-transform duration-300 ease-out"
+          style="transform: scale({mobileImageScale}); transform-origin: center center;"
+        >
+      </div>
 
       <!-- mobile text -->
       <h1 class="text-light font-medium text-3xl mt-16 mb-6">What is Vexos?</h1>
