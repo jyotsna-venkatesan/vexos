@@ -35,8 +35,8 @@
             }
 
             try {
-                // Send to our PHP endpoint on vexos.space
-                const response = await fetch('/subscribe.php', {
+                // Send to our Netlify function endpoint
+                const response = await fetch('/.netlify/functions/subscribe', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
