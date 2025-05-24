@@ -1,5 +1,5 @@
 <div class="relative overflow-hidden bg-dark">
-     <div class="max-w-7xl mx-auto lg:pt-48 md:pt-48 pt-24 px-4 sm:px-6 lg:px-8">
+     <div class="max-w-7xl mx-auto pt-48 md:pt-64 lg:pt-12 px-4 sm:px-6 lg:px-8">
          <!-- section heading -->
         <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">Because in a world full of motion,
         the hardest question is where to stand.</h1>

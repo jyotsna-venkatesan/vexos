@@ -5,6 +5,9 @@
   import Loading from "./assets/Loading.svelte";
   import Content from "./assets/Content.svelte";
   import { onMount } from "svelte";
+  import Bento from "./assets/Bento.svelte";
+  import Support from "./assets/Support.svelte";
+    import Testimonials from "./assets/Testimonials.svelte";
 
   let isLoading = true;
   let assetsLoaded = false;
@@ -33,9 +36,12 @@
     />
   </div>
 {:else}
-  <main class="font-khula bg-[#DCD9D5] min-h-screen">
+  <main class="bg-[#DCD9D5] min-h-screen">
     <Navbar />
     <Hero />
     <Content />
+    <Bento />
+    <Support />
+    <Testimonials />
   </main>
 {/if}

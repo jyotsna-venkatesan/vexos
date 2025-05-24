@@ -1,8 +1,8 @@
 <script>
   import { onMount } from 'svelte';
 
-  let desktopImageScale = 1.4;
-  let mobileImageScale = 1.4;
+  let desktopImageScale = 1.2;
+  let mobileImageScale = 1.2;
   let isDesktopImageVisible = false;
   let isMobileImageVisible = false;
 
@@ -18,7 +18,7 @@
       if (isVisible) {
         isDesktopImageVisible = true;
         const viewportProgress = Math.max(0, Math.min(1, 1 - (rect.top / window.innerHeight)));
-        desktopImageScale = 1.4 - (0.2 * viewportProgress);
+        desktopImageScale = 1.2 - (0.2 * viewportProgress);
       }
     }
 
@@ -29,7 +29,7 @@
       if (isVisible) {
         isMobileImageVisible = true;
         const viewportProgress = Math.max(0, Math.min(1, 1 - (rect.top / window.innerHeight)));
-        mobileImageScale = 1.4 - (0.2 * viewportProgress);
+        mobileImageScale = 1.2 - (0.2 * viewportProgress);
       }
     }
   };
@@ -100,7 +100,7 @@
     </div>
 
     <!-- first glow for laptop-->
-    <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto -mt-20 hidden sm:block md:block">
+    <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto -mt-20 mb-24 md:mb-32 lg:mb-48 hidden sm:block md:block">
 
     <!-- mobile view -->
     <div class="block sm:hidden">
@@ -116,7 +116,7 @@
       </div>
 
       <!-- mobile text -->
-      <h1 class="text-light font-medium text-3xl mt-16 mb-12">What is Vexos?</h1>
+      <h1 class="text-light font-medium text-3xl mt-48 mb-12">What is Vexos?</h1>
       <p class="text-light text-md">Vexos doesn't just visualize locations — it decides them. We focus on the real question:</p>
 
       <!-- indented text with gradient line -->
@@ -129,7 +129,7 @@
       <p class="text-light text-md">Vexos uses real-world signals — from satellite imagery and foot traffic to zoning data and infrastructure layers — to recommend precise, optimized locations.</p>
 
       <!-- first glow for mobile -->
-      <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto block mt-8">
+      <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto block mt-24 mb-24">
     </div>
   </div>
 </div>
