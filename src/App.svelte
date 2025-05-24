@@ -7,7 +7,10 @@
   import { onMount } from "svelte";
   import Bento from "./assets/Bento.svelte";
   import Support from "./assets/Support.svelte";
-    import Testimonials from "./assets/Testimonials.svelte";
+  import Testimonials from "./assets/Testimonials.svelte";
+  import CTA from "./assets/CTA.svelte";
+    import Footer from "./assets/Footer.svelte";
+
 
   let isLoading = true;
   let assetsLoaded = false;
@@ -43,5 +46,7 @@
     <Bento />
     <Support />
     <Testimonials />
+    <CTA />
+    <Footer />
   </main>
 {/if}

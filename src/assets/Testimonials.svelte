@@ -9,7 +9,7 @@
             <!-- first quote -->
             <div class="flex">
                 <!-- vertical line -->
-                <div class="w-1 bg-light flex-shrink-0 mr-8 self-stretch"></div>
+                <div class="w-0.5 bg-gradient-to-b from-orange-500 to-pink-500 flex-shrink-0 mr-8 self-stretch"></div>
 
                 <!-- quote content -->
                 <div class="flex flex-col">
@@ -29,7 +29,7 @@
             <!-- second quote -->
             <div class="flex">
                 <!-- vertical line -->
-                <div class="w-1 bg-light flex-shrink-0 mr-8 self-stretch"></div>
+                <div class="w-0.5 bg-gradient-to-b from-orange-500 to-pink-500 flex-shrink-0 mr-8 self-stretch"></div>
 
                 <!-- quote content -->
                 <div class="flex flex-col">
