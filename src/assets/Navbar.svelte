@@ -16,7 +16,7 @@
     </a>
 
     <!-- about us link -->
-    <a href="#what-we-do" class="text-light hover:text-pinkl relative group py-2">
+    <a href="#about" class="text-light hover:text-pinkl relative group py-2">
       About us
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
@@ -35,7 +35,7 @@
   <div class="flex flex-col space-y-3">
     <a href="#what-we-do" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>Home</a>
     <a href="#why-vexos" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>The Product</a>
-    <a href="#team-section" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>About Us</a>
+    <a href="#about" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>About Us</a>
   </div>
 </div>
 

@@ -9,12 +9,19 @@
   import Support from "./assets/Support.svelte";
   import Testimonials from "./assets/Testimonials.svelte";
   import CTA from "./assets/CTA.svelte";
-    import Footer from "./assets/Footer.svelte";
+  import Footer from "./assets/Footer.svelte";
+  import AboutUs from "./assets/AboutUs.svelte";
 
 
   let isLoading = true;
   let assetsLoaded = false;
   let textComplete = false;
+  let currentPage = "home"; // Default to home page
+
+  // Function to handle navigation
+  function navigateTo(page) {
+    currentPage = page;
+  }
 
   onMount(() => {
     setTimeout(() => {
@@ -23,6 +30,11 @@
         isLoading = false;
       }
     }, 1500);
+
+    // Check if URL has a hash for navigation
+    if (window.location.hash === "#about") {
+      currentPage = "about";
+    }
   });
 </script>
 
@@ -41,12 +53,18 @@
 {:else}
   <main class="bg-[#DCD9D5] min-h-screen">
     <Navbar />
-    <Hero />
-    <Content />
-    <Bento />
-    <Support />
-    <Testimonials />
-    <CTA />
+    
+    {#if currentPage === "home"}
+      <Hero />
+      <Content />
+      <Bento />
+      <Support />
+      <Testimonials />
+      <CTA />
+    {:else if currentPage === "about"}
+      <AboutUs />
+    {/if}
+    
     <Footer />
   </main>
 {/if}
