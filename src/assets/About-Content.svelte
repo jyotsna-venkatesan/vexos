@@ -3,12 +3,14 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <!-- text -->
       <div class="text-light">
+          <!-- heading -->
         <h2 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">Here's our story</h2>
-        <p class="mb-4 text-md">
+
+        <p class="mb-6 text-md">
           At Vexos, we're pioneering the next generation of transportation through innovative vertical mobility solutions.
           Our mission is to revolutionize urban transport by offering efficient, sustainable alternatives to traditional ground-based transportation.
         </p>
-        <p class="mb-4 text-md">
+        <p class="mb-6 text-md">
           Founded by a team of passionate engineers and visionaries, we're dedicated to creating cutting-edge technology
           that addresses the growing challenges of urban congestion and environmental sustainability.
         </p>

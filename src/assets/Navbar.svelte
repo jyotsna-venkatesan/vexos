@@ -1,6 +1,6 @@
-<nav class="sticky top-0 bg-dark px-6 py-3 shadow-md flex justify-between items-center">
+<nav class="sticky top-0 bg-dark backdrop-blur-sm px-6 py-3 shadow-lg flex justify-between items-center z-50">
     <!--logo -->
-  <div class="text-xl font-alconica text-[#2B2B2B] p-2">vexos</div>
+  <div class="text-xl font-alconica text-light p-2">vexos</div>
 
   <!-- Navigation Links -->
   <div class="hidden md:flex space-x-16 text-sm">
@@ -49,12 +49,12 @@
   function closeMobileMenu() {
     isMobileMenuOpen = false;
   }
-  
+
   function navigateHome() {
     window.history.pushState({}, "", "/");
     window.dispatchEvent(new CustomEvent('hashchange'));
   }
-  
+
   function navigateToAbout() {
     window.history.pushState({}, "", "#about");
     window.dispatchEvent(new CustomEvent('hashchange'));
