@@ -5,7 +5,7 @@
   <!-- Navigation Links -->
   <div class="hidden md:flex space-x-16 text-sm">
       <!-- home link -->
-    <a href="/" class="text-light hover:text-pinkl relative group py-2">
+    <a href="/" class="text-light hover:text-pinkl relative group py-2" on:click|preventDefault={navigateHome}>
       Home
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
@@ -16,7 +16,7 @@
     </a>
 
     <!-- about us link -->
-    <a href="#about" class="text-light hover:text-pinkl relative group py-2">
+    <a href="#about" class="text-light hover:text-pinkl relative group py-2" on:click|preventDefault={navigateToAbout}>
       About us
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
@@ -33,9 +33,9 @@
 <!-- Mobile Menu  -->
 <div class="bg-dark text-light p-4 md:hidden {isMobileMenuOpen ? 'block' : 'hidden'}">
   <div class="flex flex-col space-y-3">
-    <a href="#what-we-do" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>Home</a>
-    <a href="#why-vexos" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>The Product</a>
-    <a href="#about" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>About Us</a>
+    <a href="/" class="py-2 hover:text-pinkl" on:click|preventDefault={() => { navigateHome(); closeMobileMenu(); }}>Home</a>
+    <a href="#what-we-do" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>The Product</a>
+    <a href="#about" class="py-2 hover:text-pinkl" on:click|preventDefault={() => { navigateToAbout(); closeMobileMenu(); }}>About Us</a>
   </div>
 </div>
 
@@ -48,5 +48,15 @@
 
   function closeMobileMenu() {
     isMobileMenuOpen = false;
+  }
+  
+  function navigateHome() {
+    window.history.pushState({}, "", "/");
+    window.dispatchEvent(new CustomEvent('hashchange'));
+  }
+  
+  function navigateToAbout() {
+    window.history.pushState({}, "", "#about");
+    window.dispatchEvent(new CustomEvent('hashchange'));
   }
 </script>

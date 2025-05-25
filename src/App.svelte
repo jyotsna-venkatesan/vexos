@@ -23,6 +23,15 @@
     currentPage = page;
   }
 
+  // Function to handle hash changes
+  function handleHashChange() {
+    if (window.location.hash === "#about") {
+      currentPage = "about";
+    } else {
+      currentPage = "home";
+    }
+  }
+
   onMount(() => {
     setTimeout(() => {
       assetsLoaded = true;
@@ -31,10 +40,16 @@
       }
     }, 1500);
 
-    // Check if URL has a hash for navigation
-    if (window.location.hash === "#about") {
-      currentPage = "about";
-    }
+    // Check if URL has a hash for navigation on initial load
+    handleHashChange();
+    
+    // Add event listener for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
   });
 </script>
 
