@@ -27,10 +27,10 @@
 <section class="py-64 px-4 md:px-8 lg:px-16 bg-dark text-light">
   <div class="max-w-7xl mx-auto">
     <!-- heading -->
-    <h2 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">Here's our story</h2>
+    <h2 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">Our Timeline</h2>
 
     <!-- the timeline -->
-    <div class="w-full max-w-7xl mx-auto relative my-12">
+    <div class="w-full max-w-7xl mx-auto relative">
       <!-- laptop timeline -->
       <div class="hidden md:flex flex-col items-center w-full relative">
         <!-- Horizontal line -->
@@ -70,8 +70,8 @@
 
             <!-- Content -->
             <div class="pl-6">
-              <div class="text-pink-400 font-bold text-lg">{event.year}</div>
-              <p class="text-sm text-light opacity-80 mt-1">{event.description}</p>
+              <div class="text-light/70 text-md">{event.year}</div>
+              <p class="text-md text-light opacity-80 mt-1">{event.description}</p>
             </div>
           </div>
         {/each}

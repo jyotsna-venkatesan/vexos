@@ -14,7 +14,7 @@
       <div class="flex flex-col">
         <!-- first line: WE + [image] + ARE -->
         <div class="flex items-center mb-4 lg:mb-8">
-          <span class="text-light text-6xl md:text-[10rem] lg:text-[15rem]">WE</span>
+          <span class="text-light text-7xl md:text-[10rem] lg:text-[15rem]">WE</span>
           <span class="flex items-center justify-center mx-3 md:mx-5 lg:mx-8 my-auto">
             <img
               src="/jyots-and-mirha.png"
@@ -23,7 +23,7 @@
               style="vertical-align: middle;"
             />
           </span>
-          <span class="text-light text-6xl md:text-[10rem] lg:text-[15rem]">ARE</span>
+          <span class="text-light text-7xl md:text-[10rem] lg:text-[15rem]">ARE</span>
         </div>
 
         <!-- second line: the team behind -->
@@ -33,7 +33,7 @@
 
         <!-- third line: Vexos -->
         <div>
-            <span class="text-light text-6xl md:text-[10rem] lg:text-[15rem]">VEXOS</span>
+            <span class="text-light text-7xl md:text-[10rem] lg:text-[15rem]">VEXOS</span>
         </div>
       </div>
     </div>
