@@ -11,6 +11,7 @@
   import CTA from "./assets/CTA.svelte";
   import Footer from "./assets/Footer.svelte";
   import AboutUs from "./assets/AboutUs.svelte";
+  import Product from "./assets/Product.svelte";
 
 
   let isLoading = true;
@@ -27,6 +28,8 @@
   function handleHashChange() {
     if (window.location.hash === "#about") {
       currentPage = "about";
+    } else if (window.location.hash === "#product") {
+      currentPage = "product";
     } else {
       currentPage = "home";
     }
@@ -78,6 +81,8 @@
       <CTA />
     {:else if currentPage === "about"}
       <AboutUs />
+    {:else if currentPage === "product"}
+      <Product />
     {/if}
     
     <Footer />

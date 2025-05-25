@@ -7,7 +7,7 @@
   <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
 
   <!-- Footer content -->
-  <div class="container mx-auto px-6 md:px-12 relative z-10">
+  <div class="container mx-auto px-6 md:px-12 md:max-w-7xl relative z-10">
     <!-- Logo and tagline -->
     <div class="flex flex-col md:flex-row justify-between mb-12 md:mb-16">
       <div class="mb-10 md:mb-0">

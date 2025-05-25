@@ -10,7 +10,7 @@
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
     <!-- the product link -->
-    <a href="#what-we-do" class="text-light hover:text-pinkl relative group py-2">
+    <a href="#product" class="text-light hover:text-pinkl relative group py-2">
       The Product
       <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-pinkl transition-all duration-300 group-hover:w-full"></span>
     </a>
