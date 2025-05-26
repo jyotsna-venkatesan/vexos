@@ -47,7 +47,7 @@
 <div class="relative overflow-hidden bg-dark ">
   <div class="max-w-7xl mx-auto lg:pt-48 md:pt-48 pt-24 px-4 sm:px-6 lg:px-8">
       <!-- grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pb-24">
           <!-- left half text -->
           <div class="flex flex-col justify-end h-full order-2 md:order-1 ">
             <p class="text-light text-md ">A single platform that tells you exactly where to place what matters — whether it's a store, a sensor, or a security team.</p>
@@ -81,14 +81,14 @@
 
       <!-- semi transparent bg for the image overlay text -->
       <div class="absolute lg:top-52 top-6 left-8 lg:w-1/2 w-3/5 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6">
-        <p class="text-light text-md mb-6">At Vexos, we specialize in location intelligence. Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
+        <p class="text-light text-md mb-6">At Vexos, we specialize in <span class="text-[#FF4686]">location intelligence.</span> Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
         <!-- remaining laptop/ipad text -->
-        <p class="text-light text-md">By leveraging advanced AI analytics, we focus on optimal placement, ensuring you make informed decisions that drive success.</p>
+        <p class="text-light text-md">By leveraging advanced AI analytics, we focus on <span class="text-[#FF6D46]">optimal placement</span>, ensuring you make informed decisions that drive success.</p>
       </div>
 
       <!-- What is Vexos text moved to bottom left -->
       <div class="absolute bottom-8 left-8">
-        <h1 class="text-light font-medium text-5xl">What is Vexos?</h1>
+          <h1 class="text-light font-medium text-5xl">About Vexos</h1>
       </div>
     </div>
 
@@ -109,7 +109,7 @@
       </div>
 
       <!-- mobile text -->
-      <h1 class="text-light font-medium text-3xl mt-48 mb-12">What is Vexos?</h1>
+      <h1 class="text-light font-medium text-3xl mt-48 mb-12">About Vexos</h1>
       <p class="text-light text-md mb-6">At Vexos, we specialize in location intelligence. Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
       <!-- remaining mobile text -->
       <p class="text-light text-md">By leveraging advanced AI analytics, we focus on optimal placement, ensuring you make informed decisions that drive success.</p>

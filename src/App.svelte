@@ -45,10 +45,10 @@
 
     // Check if URL has a hash for navigation on initial load
     handleHashChange();
-    
+
     // Add event listener for hash changes
     window.addEventListener('hashchange', handleHashChange);
-    
+
     // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('hashchange', handleHashChange);
@@ -71,11 +71,11 @@
 {:else}
   <main class="bg-[#DCD9D5] min-h-screen">
     <Navbar />
-    
+
     {#if currentPage === "home"}
       <Hero />
-      <Content />
       <Bento />
+      <Content />
       <Support />
       <Testimonials />
       <CTA />
@@ -84,7 +84,7 @@
     {:else if currentPage === "product"}
       <Product />
     {/if}
-    
+
     <Footer />
   </main>
 {/if}
