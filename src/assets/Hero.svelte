@@ -88,7 +88,7 @@
 
       <!-- What is Vexos text moved to bottom left -->
       <div class="absolute bottom-8 left-8">
-          <h1 class="text-light font-medium text-5xl">About Vexos</h1>
+          <h1 class="text-light font-medium text-5xl">About <span class="text-orangen">Vexos</span></h1>
       </div>
     </div>
 
