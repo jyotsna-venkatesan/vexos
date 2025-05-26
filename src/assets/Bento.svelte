@@ -69,7 +69,7 @@
     <div class="max-w-7xl mx-auto pt-24 md:pt-64 lg:pt-12 px-4 sm:px-6 lg:px-8">
 
         <!-- heading -->
-        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-6 text-right">Technology Overview</h1>
+        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-6 text-right"><span class="text-pinkn">Technology</span> Overview</h1>
 
         <!-- sub text -->
         <p class="text-light text-md pb-12 text-right">Vexos leverages the power of AI to analyze satellite imagery, foot traffic patterns, demographics, and infrastructure data. Unlike conventional routing systems, we provide exact locations, making our insights actionable and relevant across various industries.
@@ -110,7 +110,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <!-- Right image side -->
                         <div class="w-1/3 p-3 flex items-center">
                             <img src="tech-1.png" alt="Phase 1 Technology" class="h-full w-full object-cover rounded-md shadow-sm" />
@@ -163,7 +163,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <!-- Right image side -->
                         <div class="w-1/3 p-3 flex items-center">
                             <img src="tech-3.png" alt="Phase 3 Technology" class="h-full w-full object-cover rounded-md shadow-sm" />
@@ -184,7 +184,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <!-- Right image side -->
                         <div class="w-1/3 p-3 flex items-center">
                             <img src="tech-4.png" alt="Phase 4 Technology" class="h-full w-full object-cover rounded-md shadow-sm" />
