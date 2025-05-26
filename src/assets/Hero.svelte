@@ -81,16 +81,9 @@
 
       <!-- semi transparent bg for the image overlay text -->
       <div class="absolute lg:top-52 top-6 left-8 lg:w-1/2 w-3/5 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6">
-        <p class="text-light text-md mb-6">Vexos doesn't just visualize locations — it decides them. We focus on the real question:</p>
-
-        <!-- Indented text with gradient line -->
-        <div class="flex items-center mt-4 mb-6">
-          <div class="w-1 h-8 bg-gradient-to-b from-orange-500 to-pink-500 rounded-full"></div>
-          <p class="text-light text-md font-medium ml-6">Where should you place the thing that matters most?</p>
-        </div>
-
+        <p class="text-light text-md mb-6">At Vexos, we specialize in location intelligence. Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
         <!-- remaining laptop/ipad text -->
-        <p class="text-light text-md">Vexos uses real-world signals — from satellite imagery and foot traffic to zoning data and infrastructure layers — to recommend precise, optimized locations.</p>
+        <p class="text-light text-md">By leveraging advanced AI analytics, we focus on optimal placement, ensuring you make informed decisions that drive success.</p>
       </div>
 
       <!-- What is Vexos text moved to bottom left -->
@@ -117,16 +110,9 @@
 
       <!-- mobile text -->
       <h1 class="text-light font-medium text-3xl mt-48 mb-12">What is Vexos?</h1>
-      <p class="text-light text-md">Vexos doesn't just visualize locations — it decides them. We focus on the real question:</p>
-
-      <!-- indented text with gradient line -->
-      <div class="flex items-center mt-4 mb-6">
-        <div class="w-1 h-12 bg-gradient-to-b from-orange-500 to-pink-500 rounded-full"></div>
-        <p class="text-light text-md font-medium ml-6">Where should you place the thing that matters most?</p>
-      </div>
-
+      <p class="text-light text-md mb-6">At Vexos, we specialize in location intelligence. Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
       <!-- remaining mobile text -->
-      <p class="text-light text-md">Vexos uses real-world signals — from satellite imagery and foot traffic to zoning data and infrastructure layers — to recommend precise, optimized locations.</p>
+      <p class="text-light text-md">By leveraging advanced AI analytics, we focus on optimal placement, ensuring you make informed decisions that drive success.</p>
 
       <!-- first glow for mobile -->
       <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto block mt-24 mb-24">
