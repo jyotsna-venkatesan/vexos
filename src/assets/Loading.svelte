@@ -17,34 +17,31 @@
     let totalImages = 0;
     let loadingProgress = 0;
     
-    // List of images to preload
+    // List of critical images to preload - prioritizing smaller, essential images
     const imagesList = [
-        '/Ellipse 13.png',
-        '/Ellipse 14.png',
-        '/about-glow.png',
-        '/elevator-pitch.jpeg',
-        '/flame-1.png',
+        '/small-logo.png',
         '/gateway-image.png',
+        '/mobile-gateway-image.png',
         '/glow-1.png',
         '/glow-2.png',
-        '/hkstp-logo.png',
-        '/jyots-and-mirha.png',
-        '/jyots-img.png',
-        '/kteo-logo.png',
-        '/mirha-img.png',
-        '/mobile-gateway-image.png',
-        '/polyu-logo.png',
-        '/product-glow.png',
-        '/small-logo.png',
-        '/tech-1.png',
-        '/tech-3.png',
-        '/tech-4.png',
-        '/src/assets/svelte.svg'
+        '/flame-1.png',
+        '/about-glow.png',
+        '/product-glow.png'
     ];
     
-    // Function to preload images
+    // Function to preload images with timeout
     function preloadImages() {
         totalImages = imagesList.length;
+        
+        // Set a maximum loading time of 5 seconds
+        setTimeout(() => {
+            // Force completion if still loading after timeout
+            if (loadedImages < totalImages) {
+                loadedImages = totalImages;
+                loadingProgress = 100;
+                checkLoadingComplete();
+            }
+        }, 5000);
         
         imagesList.forEach(src => {
             const img = new Image();
@@ -73,7 +70,7 @@
         if (loadedImages >= totalImages && visibleChars >= message.length) {
             clearInterval(revealTimer);
             
-            // Only start exit animation after minimal delay
+            // Start exit animation immediately since we're only loading critical images
             delayTimer = setTimeout(() => {
                 // start the exit animation
                 visible = false;
@@ -81,7 +78,7 @@
                 setTimeout(() => {
                     dispatch('textLoaded');
                 }, exitAnimationDuration);
-            }, 500); // Reduced delay since we're actually waiting for images
+            }, 300); // Reduced delay for better user experience
         }
     }
 
