@@ -15,7 +15,6 @@
 
 
   let isLoading = true;
-  let assetsLoaded = false;
   let textComplete = false;
   let currentPage = "home"; // Default to home page
 
@@ -36,13 +35,6 @@
   }
 
   onMount(() => {
-    setTimeout(() => {
-      assetsLoaded = true;
-      if (textComplete) {
-        isLoading = false;
-      }
-    }, 1500);
-
     // Check if URL has a hash for navigation on initial load
     handleHashChange();
 
@@ -61,10 +53,7 @@
     <Loading
       message="Because in a world full of motion, the hardest question is where to stand..."
       on:textLoaded={() => {
-        textComplete = true;
-        if (assetsLoaded) {
-          isLoading = false;
-        }
+        isLoading = false;
       }}
     />
   </div>
