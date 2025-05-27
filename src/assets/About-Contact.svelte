@@ -109,7 +109,7 @@
 <div class="relative overflow-hidden bg-dark">
     <div class="max-w-7xl mx-auto pt-4 px-4 sm:px-6">
         <!-- heading -->
-        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-6">Reach out to us</h1>
+        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-6"><span class="text-pinkn">Reach out</span> to us</h1>
         <p class="text-light text-md pb-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumm</p>
 
         <div class="max-w-7xl ml-auto">

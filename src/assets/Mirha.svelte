@@ -5,7 +5,7 @@
             <div class="order-1 md:order-1">
 
                 <!-- meet mirha -->
-                <h2 class="text-light text-3xl sm:text-3xl md:text-5xl lg:text-5xl mb-4">Meet Mirha</h2>
+                <h2 class="text-light text-3xl sm:text-3xl md:text-5xl lg:text-5xl mb-4">Meet <span class="text-pinkn">Mirha</span></h2>
 
                 <!-- mirha position -->
                 <p class="text-md leading-relaxed text-pink pb-8">Co-founder and Data Lead</p>

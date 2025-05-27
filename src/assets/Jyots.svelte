@@ -8,7 +8,7 @@
             <div class="order-1 md:order-1">
 
                 <!-- meet jyotsna -->
-                <h2 class="text-light text-3xl sm:text-3xl md:text-5xl lg:text-5xl mb-4 text-right">Meet Jyotsna</h2>
+                <h2 class="text-light text-3xl sm:text-3xl md:text-5xl lg:text-5xl mb-4 text-right">Meet <span class="text-orangen">Jyotsna</span></h2>
 
                 <!-- jyotsna position -->
                 <p class="text-md leading-relaxed text-pink pb-8 text-right">Co-founder and Tech Lead</p>

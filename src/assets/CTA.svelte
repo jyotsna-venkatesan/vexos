@@ -109,7 +109,7 @@
 <div class="relative overflow-hidden bg-dark">
     <div class="max-w-7xl mx-auto pt-48 md:pt-64 lg:pt-48 px-4 sm:px-6 lg:px-8">
         <!-- heading - right aligned -->
-        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-6">Stay connected with us</h1>
+        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-6">Stay <span class="text-orangen">connected</span> with us</h1>
         <p class="text-light text-md pb-8">Be the first to know when we launch</p>
 
         <!-- Custom Email subscription form - right aligned -->

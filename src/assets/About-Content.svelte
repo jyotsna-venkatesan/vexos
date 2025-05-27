@@ -4,7 +4,7 @@
       <!-- text -->
       <div class="text-light">
           <!-- heading -->
-        <h2 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">Here's our story</h2>
+        <h2 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">Here's our <span class="text-pinkn">story</span></h2>
 
         <p class="mb-6 text-md">
           At Vexos, we're pioneering the next generation of transportation through innovative vertical mobility solutions.

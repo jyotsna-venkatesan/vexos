@@ -109,7 +109,7 @@
       </div>
 
       <!-- mobile text -->
-      <h1 class="text-light font-medium text-3xl mt-48 mb-12">About Vexos</h1>
+      <h1 class="text-light font-medium text-3xl mt-48 mb-12">About <span class="text-pinkn">Vexos</span></h1>
       <p class="text-light text-md mb-6">At Vexos, we specialize in location intelligence. Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
       <!-- remaining mobile text -->
       <p class="text-light text-md">By leveraging advanced AI analytics, we focus on optimal placement, ensuring you make informed decisions that drive success.</p>
