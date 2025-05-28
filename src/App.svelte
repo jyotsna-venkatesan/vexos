@@ -17,7 +17,7 @@
   let isLoading = true;
   let textComplete = false;
   let currentPage = "home"; // Default to home page
-  
+
   // Background image loading
   let bgImageLoader;
 
@@ -54,7 +54,7 @@
       '/kteo-logo.png',
       '/polyu-logo.png'
     ];
-    
+
     // Load each image in the background
     largeImages.forEach(src => {
       const img = new Image();
@@ -96,7 +96,6 @@
       <Bento />
       <Content />
       <Support />
-      <Testimonials />
       <CTA />
     {:else if currentPage === "about"}
       <AboutUs />

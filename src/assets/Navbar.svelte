@@ -34,7 +34,7 @@
 <div class="bg-dark text-light p-4 md:hidden {isMobileMenuOpen ? 'block' : 'hidden'}">
   <div class="flex flex-col space-y-3">
     <a href="/" class="py-2 hover:text-pinkl" on:click|preventDefault={() => { navigateHome(); closeMobileMenu(); }}>Home</a>
-    <a href="#what-we-do" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>The Product</a>
+    <a href="#product" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>The Product</a>
     <a href="#about" class="py-2 hover:text-pinkl" on:click|preventDefault={() => { navigateToAbout(); closeMobileMenu(); }}>About Us</a>
   </div>
 </div>

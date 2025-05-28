@@ -2,24 +2,24 @@
   // Timeline data
   const timelineEvents = [
     {
-      year: "2019",
-      description: "Vexos was founded with a vision to revolutionize workflow automation."
+      year: "January 2025",
+      description: "Started exploring the idea and defining the problem."
     },
     {
-      year: "2020",
-      description: "Launched our first enterprise solution with overwhelming success."
+      year: "February 2025",
+      description: "Applied to the PolyU x HKSTP Micro Fund."
     },
     {
-      year: "2021",
-      description: "Expanded operations to three new continents with growing team."
+      year: "April 2025",
+      description: "Pitched Vexos to the selection committee."
     },
     {
-      year: "2022",
-      description: "Recognized with prestigious industry awards for technology innovation."
+      year: "May 2025",
+      description: "Accepted into the Micro Fund and HKSTP’s Ideation Program."
     },
     {
-      year: "2023",
-      description: "Setting new standards with AI-powered solutions and expanded partnerships."
+      year: "Now",
+      description: "We’ve incorporated and started building our MVP."
     }
   ];
 </script>
