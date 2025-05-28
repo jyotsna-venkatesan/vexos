@@ -41,8 +41,8 @@
       <nav class="mb-6 md:mb-0">
         <ul class="flex flex-wrap gap-6">
           <li><a href="/" class="text-md text-light hover:text-white transition-colors">Home</a></li>
-          <li><a href="#what-we-do" class="text-md text-light hover:text-white transition-colors">The Product</a></li>
-          <li><a href="#team-section" class="text-md text-light hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#product" class="text-md text-light hover:text-white transition-colors">The Product</a></li>
+          <li><a href="#about" class="text-md text-light hover:text-white transition-colors">About Us</a></li>
         </ul>
       </nav>
 
