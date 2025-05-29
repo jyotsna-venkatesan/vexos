@@ -1,5 +1,57 @@
 <script>
   const currentYear = new Date().getFullYear();
+
+  function navigateToHome() {
+    window.history.pushState({}, "", "/");
+    // Always scroll to top regardless of current position
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }, 0);
+    window.dispatchEvent(new CustomEvent('hashchange'));
+  }
+
+  function navigateToProduct() {
+    window.history.pushState({}, "", "#product");
+    // Using setTimeout to ensure this runs after the current execution cycle
+    setTimeout(() => {
+      const productSection = document.getElementById('product');
+      if (productSection) {
+        // Get the element's position and scroll there directly
+        const offsetTop = productSection.offsetTop;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      } else {
+        // Fallback to top if section not found
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 0);
+    window.dispatchEvent(new CustomEvent('hashchange'));
+  }
+
+  function navigateToAbout() {
+    window.history.pushState({}, "", "#about");
+    // Using setTimeout to ensure this runs after the current execution cycle
+    setTimeout(() => {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        // Get the element's position and scroll there directly
+        const offsetTop = aboutSection.offsetTop;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      } else {
+        // Fallback to top if section not found
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 0);
+    window.dispatchEvent(new CustomEvent('hashchange'));
+  }
 </script>
 
 <footer class="bg-dark text-white pt-48 md:pt-64 lg:pt-64 pb-8 relative overflow-hidden font-khula" id="footer-section">
@@ -40,9 +92,9 @@
     <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row md:items-center justify-between">
       <nav class="mb-6 md:mb-0">
         <ul class="flex flex-wrap gap-6">
-          <li><a href="/" class="text-md text-light hover:text-white transition-colors">Home</a></li>
-          <li><a href="#product" class="text-md text-light hover:text-white transition-colors">The Product</a></li>
-          <li><a href="#about" class="text-md text-light hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/" class="text-md text-light hover:text-white transition-colors" on:click|preventDefault={navigateToHome}>Home</a></li>
+          <li><a href="#product" class="text-md text-light hover:text-white transition-colors" on:click|preventDefault={navigateToProduct}>The Product</a></li>
+          <li><a href="#about" class="text-md text-light hover:text-white transition-colors" on:click|preventDefault={navigateToAbout}>About Us</a></li>
         </ul>
       </nav>
 
