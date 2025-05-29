@@ -64,7 +64,8 @@
     <div class="flex flex-col md:flex-row justify-between mb-12 md:mb-16">
       <div class="mb-10 md:mb-0">
         <div class="flex items-center mb-4">
-          <span class="text-2xl font-playfair">Vexos</span>
+          <img src="/small-icon.png" alt="Vexos Icon" class="h-[1.2em] mr-2" />
+          <span class="text-lg font-playfair">Vexos</span>
         </div>
         <p class="text-light text-md max-w-md">
           Transforming location intelligence for business growth through AI and geospatial analytics
@@ -77,7 +78,7 @@
 
         <!-- Social media icons -->
         <div class="flex space-x-4">
-          <a href="https://www.linkedin.com/company/vexos/" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/company/vexos-ai/ " target="_blank" rel="noopener noreferrer"
              class="text-white/70 hover:text-[#0077b5] transition-colors"
              aria-label="Visit Vexos LinkedIn page">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

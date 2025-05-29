@@ -1,6 +1,9 @@
 <nav class="sticky top-0 bg-dark backdrop-blur-sm px-6 py-3 shadow-lg flex justify-between items-center z-50">
     <!--logo -->
-  <div class="text-xl font-playfair text-light p-2">Vexos</div>
+  <div class="text-xl font-playfair text-light p-2 flex items-center">
+    <img src="/small-icon.png" alt="Vexos Icon" class="h-[1em] mr-1" />
+    Vexos
+  </div>
 
   <!-- Navigation Links -->
   <div class="hidden md:flex space-x-16 text-sm">
