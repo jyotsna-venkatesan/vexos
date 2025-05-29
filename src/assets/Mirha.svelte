@@ -12,28 +12,12 @@
 
                 <!-- mirha text -->
                 <p class="text-md leading-relaxed pb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
-                    Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
-                    rhoncus ut eleifend nibh porttitor. Ut in nulla enim.
+                    Mirha is a third-year undergraduate at the Hong Kong Polytechnic University, where she studies Physics with a Secondary Major in Artificial Intelligence and Data Analytics. Her interests span from quantum mechanics to cosmology, with a growing inclination toward space technology, which she hopes to showcase through her work with vexos. You’ll find her either trying to work out the theories behind our universe's evolution or learning how to build autonomous space systems. At the intersection of physics and AI, she’s inspired by the idea of using inventive techniques and modern technology to tackle ongoing challenges related to Earth preservation as well as space exploration.
                 </p>
 
                 <p class="text-md leading-relaxed pb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
-                    Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
-                    rhoncus ut eleifend nibh porttitor. Ut in nulla enim.
+                    Apart from her academic focus, she embraces her old soul personality, searching for that elusive spark of creativity through multiple art forms. Whether sketching her thoughts or capturing moments through photography, she expresses her unique perspective with passion. As a classic literature lover, she’s always on the lookout for tips to dive back into 700-page Russian novels (thanks to our declining attention spans). You’ll often find her listening to a carefully curated rock playlist, blasting the music at full volume because, in her view, that’s the only way to truly experience sound. Balancing her academic and creative endeavors, Mirha is someone who constantly aims to explore the universe, both outside and within.
                 </p>
-
-                <p class="text-md leading-relaxed pb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
-                    Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus
-                    rhoncus ut eleifend nibh porttitor. Ut in nulla enim.
-                </p>
-
-                <!-- indented text with gradient line -->
-                <div class="flex items-center mt-4 mb-6">
-                  <div class="w-1 h-8 bg-gradient-to-b from-orange-500 to-pink-500 rounded-full"></div>
-                  <p class="text-light text-md font-medium ml-6">Where should you place the thing that matters most?</p>
-                </div>
             </div>
             <div class="order-2 md:order-1 flex justify-center lg:justify-end">
                 <img src="/mirha-img.png" alt="Mirha" class="w-full lg:w-[70%] h-auto max-w-full rounded-md" />
