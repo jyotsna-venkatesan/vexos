@@ -12,7 +12,7 @@
     <div class="flex flex-col md:flex-row justify-between mb-12 md:mb-16">
       <div class="mb-10 md:mb-0">
         <div class="flex items-center mb-4">
-          <span class="text-2xl font-semibold font-alconica">vexos</span>
+          <span class="text-2xl font-playfair">Vexos</span>
         </div>
         <p class="text-light text-md max-w-md">
           Transforming location intelligence for business growth through AI and geospatial analytics
@@ -47,7 +47,7 @@
       </nav>
 
       <p class="text-light text-md">
-        © {currentYear} Vexos. All rights reserved.
+        © {currentYear} Vexos All rights reserved.
       </p>
     </div>
   </div>

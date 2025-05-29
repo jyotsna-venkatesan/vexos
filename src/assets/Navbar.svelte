@@ -1,6 +1,6 @@
 <nav class="sticky top-0 bg-dark backdrop-blur-sm px-6 py-3 shadow-lg flex justify-between items-center z-50">
     <!--logo -->
-  <div class="text-xl font-alconica text-light p-2">vexos</div>
+  <div class="text-xl font-playfair text-light p-2">Vexos</div>
 
   <!-- Navigation Links -->
   <div class="hidden md:flex space-x-16 text-sm">
@@ -31,7 +31,7 @@
 </nav>
 
 <!-- Mobile Menu  -->
-<div class="bg-dark text-light p-4 md:hidden {isMobileMenuOpen ? 'block' : 'hidden'}">
+<div class="bg-dark backdrop-blur-sm bg-opacity-95 text-light p-4 md:hidden sticky top-[56px] z-40 shadow-md {isMobileMenuOpen ? 'block' : 'hidden'}">
   <div class="flex flex-col space-y-3">
     <a href="/" class="py-2 hover:text-pinkl" on:click|preventDefault={() => { navigateHome(); closeMobileMenu(); }}>Home</a>
     <a href="#product" class="py-2 hover:text-pinkl" on:click={closeMobileMenu}>The Product</a>

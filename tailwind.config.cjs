@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Pathway Extreme"', "sans-serif"],
+        playfair: ['"Playfair Display"', "serif"],
       },
       colors: {
         dark: "#040404",
