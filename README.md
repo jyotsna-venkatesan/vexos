@@ -11,7 +11,7 @@ Every great business deserves the perfect location. We help you transform confus
 - **Jyotsna Venkatesan** - Founder & CTO
   - [LinkedIn](https://www.linkedin.com/in/jyotsna-venkatesan-8684801b8/)
 
-- **Mirha Saleem** - Founder & CDO
+- **Mirha Saleem** - Founder & CEO
   - [LinkedIn](https://www.linkedin.com/in/mirha-saleem-4348a5258/)
 
 ---
