@@ -22,12 +22,6 @@
                     Outside of academic and internship work, Jyotsna spends a majority of her time on projects that reflect her personal interests — whether it’s learning Arabic, collecting vegetarian recipes, diving into the history of coffee, or building platforms to fix messy group coordination. She’s happiest when she’s creating something useful, especially when it blends her technical skills with curiosity.
                 </p>
 
-
-                <!-- indented text with gradient line -->
-                <div class="flex items-center mt-4 mb-6 justify-end">
-                  <p class="text-light text-md font-medium mr-6 text-right">“Tech with purpose is the bare minimum. If it doesn’t serve a purpose, it’s just complexity for the sake of it.”</p>
-                  <div class="w-1 h-8 bg-gradient-to-b from-orange-500 to-pink-500 rounded-full"></div>
-                </div>
             </div>
         </div>
     </div>
