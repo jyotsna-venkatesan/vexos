@@ -7,7 +7,7 @@ module.exports = {
         playfair: ['"Playfair Display"', "serif"],
       },
       colors: {
-        dark: "#040404",
+        dark: "#111111",
         light: "#F7F7F7",
         orangel: "#E4775F",
         pinkl: "#FFA4C4",

@@ -11,12 +11,12 @@
     let revealTimer;
     let delayTimer;
     let visible = true;
-    
+
     // Image preloading
     let loadedImages = 0;
     let totalImages = 0;
     let loadingProgress = 0;
-    
+
     // List of critical images to preload - prioritizing smaller, essential images
     const imagesList = [
         '/small-logo.png',
@@ -28,11 +28,11 @@
         '/about-glow.png',
         '/product-glow.png'
     ];
-    
+
     // Function to preload images with timeout
     function preloadImages() {
         totalImages = imagesList.length;
-        
+
         // Set a maximum loading time of 5 seconds
         setTimeout(() => {
             // Force completion if still loading after timeout
@@ -42,13 +42,13 @@
                 checkLoadingComplete();
             }
         }, 5000);
-        
+
         imagesList.forEach(src => {
             const img = new Image();
             img.onload = () => {
                 loadedImages++;
                 loadingProgress = Math.floor((loadedImages / totalImages) * 100);
-                
+
                 // Check if all images are loaded and text animation is complete
                 checkLoadingComplete();
             };
@@ -57,19 +57,19 @@
                 loadedImages++;
                 loadingProgress = Math.floor((loadedImages / totalImages) * 100);
                 console.error(`Failed to load image: ${src}`);
-                
+
                 // Check if all images are loaded
                 checkLoadingComplete();
             };
             img.src = src;
         });
     }
-    
+
     // Function to check if loading is complete
     function checkLoadingComplete() {
         if (loadedImages >= totalImages && visibleChars >= message.length) {
             clearInterval(revealTimer);
-            
+
             // Start exit animation immediately since we're only loading critical images
             delayTimer = setTimeout(() => {
                 // start the exit animation
@@ -85,7 +85,7 @@
     onMount(() => {
         // Start preloading images
         preloadImages();
-        
+
         // start revealing characters
         revealTimer = setInterval(() => {
             if (visibleChars < message.length) {
@@ -114,7 +114,7 @@
 
 {#if visible}
     <div
-        class="fixed inset-0 z-50 w-full h-screen flex items-center justify-center overflow-hidden bg-[#0A0A0A]"
+        class="fixed inset-0 z-50 w-full h-screen flex items-center justify-center overflow-hidden bg-dark"
         transition:fly={{ y: -window.innerHeight * 1.5, duration: exitAnimationDuration, easing: t => t * t, opacity: 1 }}>
         <!-- message -->
         <div class="z-20 flex flex-col items-center justify-center px-6 w-full mx-auto">
@@ -125,10 +125,10 @@
                     </span>
                 {/each}
             </div>
-            
+
             <!-- Progress bar with shine effect -->
             <div class="w-48 h-0.5 bg-gray-800 rounded-full overflow-hidden relative">
-                <div 
+                <div
                     class="h-full bg-pinkn transition-all duration-300 ease-out relative"
                     style="width: {loadingProgress}%">
                 </div>
