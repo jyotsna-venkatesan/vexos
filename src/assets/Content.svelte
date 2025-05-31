@@ -1,7 +1,7 @@
 <div class="relative overflow-hidden bg-dark">
      <div class="max-w-7xl mx-auto pt-48 md:pt-72 lg:pt-64 px-4 sm:px-6 lg:px-8">
          <!-- section heading -->
-        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">From Retail to Infrastructure — and <span class="text-orangen">Beyond</span></h1>
+        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">From Retail to Infrastructure and <span class="text-orangen">Beyond</span></h1>
 
         <!-- Full-width intro paragraph -->
         <div class="mb-12">
