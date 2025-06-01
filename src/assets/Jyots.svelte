@@ -19,7 +19,7 @@
                 </p>
 
                 <p class="text-md leading-relaxed pb-6 text-right">
-                    Outside of academic and internship work, Jyotsna spends a majority of her time on projects that reflect her personal interests — whether it’s learning Arabic, collecting vegetarian recipes, diving into the history of coffee, or building platforms to fix messy group coordination. She’s happiest when she’s creating something useful, especially when it blends her technical skills with curiosity.
+                    Outside of academic and internship work, Jyotsna spends a majority of her time on projects that reflect her personal interests — whether it’s building an Arabic vocabulary app, designing recipe platform focusing on vegetarian recipes, creating a game that explores the history of coffee, or building platforms to fix messy group coordination. She’s happiest when she’s creating something useful, especially when it blends her technical skills with curiosity.
                 </p>
 
             </div>
