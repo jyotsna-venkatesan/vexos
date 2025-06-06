@@ -9,8 +9,7 @@
 
                 <!-- description text -->
                 <p class="text-light text-md lg:pr-6">
-                    Our innovation is made possible through the generous support and collaboration
-                    of these esteemed organizations.
+                    We have been awarded a Cash Prize of HK$20,000 and admission to the HKSTP Ideation Programme. More to come!
                 </p>
             </div>
 
