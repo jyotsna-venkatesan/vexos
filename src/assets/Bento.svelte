@@ -72,7 +72,7 @@
         <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-6 text-right"><span class="text-pinkn">Technological</span> Overview</h1>
 
         <!-- sub text -->
-        <p class="text-light text-md pb-12 text-right">Vexos leverages the power of AI to analyze satellite imagery, foot traffic patterns, demographics, and infrastructure data. Unlike conventional routing systems, we provide exact locations, making our insights actionable and relevant across various industries.
+        <p class="text-light text-md pb-12 text-right">Vexos leverages the power of AI to analyze satellite imagery, foot traffic patterns, demographics, and infrastructure data. Unlike conventional routing systems, we provide exact locations, making your dreams actionable and relevant across various industries.
 </p>
 
         <div class="w-full flex flex-col gap-4 sm:gap-6">
