@@ -50,11 +50,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pb-24">
           <!-- left half text -->
           <div class="flex flex-col justify-end h-full order-2 md:order-1 ">
-            <p class="text-light text-md ">A single platform that tells you exactly where to place what matters — whether it's a store, a sensor, or a security team.</p>
+            <p class="text-light text-md ">A unique platform that informs you exactly where to place what matters — whether it's a store, a sensor, or a security set-up.</p>
           </div>
 
           <!-- right half text -->
-          <h1 class="text-light font-medium text-6xl md:text-5xl lg:text-[90px] text-right md:text-right order-1 md:order-2"> RE-IMAGINING LOCATION DECISIONS</h1>
+          <h1 class="text-light font-medium text-6xl md:text-5xl lg:text-[90px] text-right md:text-right order-1 md:order-2"> RE-IMAGINING LOCATIONS</h1>
       </div>
 
       <!-- horizontal line -->
@@ -81,9 +81,9 @@
 
       <!-- semi transparent bg for the image overlay text -->
       <div class="absolute lg:top-52 top-6 left-8 lg:w-1/2 w-3/5 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6">
-        <p class="text-light text-md mb-6">At Vexos, we specialize in <span class="text-[#FF4686]">location intelligence.</span> Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
+        <p class="text-light text-md mb-6">At Vexos, we specialize in <span class="text-[#FF4686]">location intelligence.</span> Our platform goes beyond traditional mapping to provide sustainable options tailored to your needs.</p>
         <!-- remaining laptop/ipad text -->
-        <p class="text-light text-md">By leveraging advanced AI analytics, we focus on <span class="text-[#FF6D46]">optimal placement</span>, ensuring you make informed decisions that drive success.</p>
+        <p class="text-light text-md">By leveraging advanced AI analytics, we focus on <span class="text-[#FF6D46]">optimal placement</span>, ensuring that you make informed decisions leading to your success.</p>
       </div>
 
       <!-- What is Vexos text moved to bottom left -->
@@ -110,9 +110,9 @@
 
       <!-- mobile text -->
       <h1 class="text-light font-medium text-3xl mt-48 mb-12">About <span class="text-pinkn">Vexos</span></h1>
-      <p class="text-light text-md mb-6">At Vexos, we specialize in location intelligence. Our platform goes beyond traditional mapping to deliver precise recommendations tailored to your needs.</p>
+      <p class="text-light text-md mb-6">At Vexos, we specialize in location intelligence. Our platform goes beyond traditional mapping to provide sustainable options tailored to your needs.</p>
       <!-- remaining mobile text -->
-      <p class="text-light text-md">By leveraging advanced AI analytics, we focus on optimal placement, ensuring you make informed decisions that drive success.</p>
+      <p class="text-light text-md">By leveraging advanced AI analytics, we focus on optimal placement, ensuring that you make informed decisions leading to your success.</p>
 
       <!-- first glow for mobile -->
       <img src="/glow-1.png" alt="Glow 1" class="w-full h-auto block mt-24 mb-24">
