@@ -1,11 +1,11 @@
 <div class="relative overflow-hidden bg-dark">
      <div class="max-w-7xl mx-auto pt-48 md:pt-72 lg:pt-64 px-4 sm:px-6 lg:px-8">
          <!-- section heading -->
-        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">From Retail to Infrastructure and <span class="text-orangen">Beyond</span></h1>
+        <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-12">From Retail to Real Estate and <span class="text-orangen">Beyond</span></h1>
 
         <!-- Full-width intro paragraph -->
         <div class="mb-12">
-            <p class="text-light text-md">We are initially focusing on retail and real estate, but our platform is designed to quickly expand into <span class="text-orangel">other sectors.</span> Our location intelligence platform can be applied to any enterprise that needs precise location data for smarter business decisions. By harnessing the power of AI and geospatial analytics, we help organizations transform raw location data into strategic insights that drive growth and operational efficiency.</p>
+            <p class="text-light text-md">We are initially focusing on retail and real estate, but our platform is designed to quickly expand into <span class="text-orangel">other sectors.</span> Our location intelligence platform can be applied to any enterprise that needs precise location data for smarter business alignments. By harnessing the power of AI and geospatial analytics, we help organizations transform raw location data into strategic insights that drive growth and operational efficiency.</p>
         </div>
 
         <!-- columns with cards -->
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="bg-gray-900 p-4 rounded-md border-l-4 border-pink-500">
-                    <p class="text-gray-300 mb-2">"Show me which neighborhoods have the highest customer density for my target demographic."</p>
+                    <p class="text-gray-300 mb-2">"Show me which neighborhoods have the highest customer density for my target demographics."</p>
                 </div>
             </div>
 
