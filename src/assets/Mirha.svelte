@@ -16,7 +16,7 @@
                 </p>
 
                 <p class="text-md leading-relaxed pb-6">
-                    Apart from her academic focus, she embraces her old soul personality, searching for that elusive spark of creativity through multiple art forms. Whether sketching her thoughts or capturing moments through photography, she expresses her unique perspective with passion. As a classic literature lover, she’s always on the lookout for tips to dive back into 700-page Russian novels (thanks to our declining attention spans). You’ll often find her listening to a carefully curated rock playlist, blasting the music at full volume because, in her view, that’s the only way to truly experience sound. Balancing her academic and creative endeavors, Mirha is someone who constantly aims to explore the universe, both outside and within.
+                    Apart from her academic focus, she embraces her old soul personality, searching for that elusive spark of creativity through multiple art forms. Whether sketching her thoughts or capturing moments through photography, she expresses her unique perspective with passion. As a classic literature lover, she’s always on the lookout for tips to dive back into 700-page Russian novels (thanks to our declining attention spans). You’ll often find her listening to a carefully curated rock playlist, blasting the music at full volume because, in her view, that’s the only way to truly experience sound. Balancing her academic and creative endeavours, Mirha is someone who constantly aims to explore the universe, both outside and within.
                 </p>
             </div>
             <div class="order-2 md:order-1 flex justify-center lg:justify-end">
