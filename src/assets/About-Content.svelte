@@ -19,10 +19,10 @@
             Vexos began with a question: why do businesses have so many tools to manage movement — deliveries, routes, logistics — but almost none to help them decide <span class="text-orangel">where things should go in the first place?</span>
         </p>
         <p class="mb-6 text-md">
-          As we looked deeper, it became clear that this wasn't just an oversight — it was a real gap. Across industries, decisions about physical placement were still being made manually, slowly, and often without the right data. The cost of getting it wrong could be huge.
+          As we looked deeper, it became clear that this wasn't just an oversight — it was a real gap. Across industries, decisions about physical placement are still being made manually, slowly, and often without the right data. The cost of getting it wrong could be huge.
         </p>
         <p class="mb-6 text-md">
-          We're two third-year university students who started Vexos to change that. With advancements in AI and access to powerful geospatial data, we saw an opportunity to build a platform that makes location decisions smarter, faster, and easier. Today, with support from HKSTP and the PolyU x HKSTP Micro Fund, we're working to turn that idea into a product that helps organizations confidently answer one of the most fundamental questions: <span class="text-pinkl">where should this go?</span>
+          We're two third-year university students who launched Vexos to change that. With advancements in AI and access to powerful geospatial data, we got an opportunity to build a platform that makes location decisions smarter, faster, and easier. Today, with support from HKSTP and the PolyU x HKSTP Micro Fund, we're working to transform that idea into a product that helps organizations confidently answer one of the most fundamental questions: <span class="text-pinkl">where should this go?</span>
         </p>
         <div class="flex space-x-4">
           <button on:click={scrollToContact} class="border border-primary text-primary hover:bg-light hover:text-dark py-2 px-6 rounded-md transition duration-300 inline-block cursor-pointer">
