@@ -5,7 +5,7 @@
             <!-- heading and description -->
             <div class="lg:w-1/3 flex flex-col justify-center">
                 <!-- heading -->
-                <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-8"><span class="text-pinkn">Supported</span> By</h1>
+                <h1 class="text-light sm:text-3xl md:text-5xl lg:text-5xl text-3xl pb-8"><span class="text-pinkn">Supported</span> By:</h1>
 
                 <!-- description text -->
                 <p class="text-light text-md lg:pr-6">
